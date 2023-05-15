@@ -77,11 +77,12 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-[rgba(0,0,0,0.3)] p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#aboutme">About Me</MobileNavLink>
-            <MobileNavLink href="#projects">Projects</MobileNavLink>
-            <MobileNavLink href="#whatido">What I do?</MobileNavLink>
-            <MobileNavLink href="#technologies">Technologies</MobileNavLink>
-            <MobileNavLink href="#contacts">Contacts</MobileNavLink>
+            <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
+            <MobileNavLink href="#projects">Corpo técnico</MobileNavLink>
+            <MobileNavLink href="#whatido">O nosso espaço</MobileNavLink>
+            <MobileNavLink href="#technologies">Parcerias</MobileNavLink>
+            <MobileNavLink href="#contacts">Contatos</MobileNavLink>
+            <MobileNavLink href="#contacts">Perguntas frequentes</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -104,11 +105,12 @@ export function Header() {
             <Link href="#" aria-label="Home">
             </Link>
             <div className="hidden space-x-4 sm:ml-6 lg:block">
-              <NavLink href="#aboutme">About Me</NavLink>
-              <NavLink href="#projects">Projects</NavLink>
-              <NavLink href="#whatido">What I do?</NavLink>
-              <NavLink href="#technologies">Technologies</NavLink>
-              <NavLink href="#contacts">Contacts</NavLink>
+              <NavLink href="#aboutme">Quem somos</NavLink>
+              <NavLink href="#projects">Corpo técnico</NavLink>
+              <NavLink href="#whatido">O nosso espaço</NavLink>
+              <NavLink href="#technologies">Parcerias</NavLink>
+              <NavLink href="#technologies">Contatos</NavLink>
+              <NavLink href="#contacts">Perguntas frequentes</NavLink>
             </div>
           </div>
         </nav>

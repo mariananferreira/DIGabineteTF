@@ -5,9 +5,8 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import  Hero  from '@/components/Hero'
 import { AboutMe } from '@/components/AboutMe'
-import { Projects } from '@/components/Projects'
 import { WhatCanDo } from '@/components/WhatCanDo'
-import Technologies from '@/components/Technologies'
+import OurTeam from '@/components/OurTeam'
 import { Contacts } from '@/components/Contacts'
 
 
@@ -21,10 +20,9 @@ export default function Home() {
       <main className='primaryBack'>
         <Hero />
         <AboutMe />
-        <Projects />
+        <OurTeam />
         <WhatCanDo />
         <CallToAction />
-        <Technologies />
         <Contacts />
       </main>
       <Footer />
