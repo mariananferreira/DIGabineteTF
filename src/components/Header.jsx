@@ -77,7 +77,7 @@ function MobileNavigation() {
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-[rgba(0,0,0,0.3)] p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
             <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
-            <MobileNavLink href="#projects">Corpo técnico</MobileNavLink>
+            <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
             <MobileNavLink href="#whatido">O nosso espaço</MobileNavLink>
             <MobileNavLink href="#technologies">Parcerias</MobileNavLink>
             <MobileNavLink href="#contacts">Contatos</MobileNavLink>
@@ -105,7 +105,7 @@ export function Header() {
             </Link>
             <div className="hidden space-x-4 sm:ml-6 lg:block">
               <NavLink href="#aboutme">Quem somos</NavLink>
-              <NavLink href="#projects">Corpo técnico</NavLink>
+              <NavLink href="#ourteam">Corpo técnico</NavLink>
               <NavLink href="#whatido">O nosso espaço</NavLink>
               <NavLink href="#technologies">Parcerias</NavLink>
               <NavLink href="#technologies">Contatos</NavLink>

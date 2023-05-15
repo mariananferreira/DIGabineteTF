@@ -28,7 +28,7 @@ export default function OurTeam() {
             Corpo técnico
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Conheça a nossa equipa composta pela Débora e Inês
+            Conheça a nossa equipa composta pela Débora e Inês.
           </p>
         </div>
         <ul
