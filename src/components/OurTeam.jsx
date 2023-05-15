@@ -28,8 +28,7 @@ export default function OurTeam() {
             Corpo técnico
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We’re a dynamic group of individuals who are passionate about what
-            we do and dedicated to delivering the best results for our clients.
+            Conheça a nossa equipa composta pela Débora e Inês
           </p>
         </div>
         <ul
@@ -39,7 +38,7 @@ export default function OurTeam() {
           {people.map((person) => (
             <li key={person.name}>
               <Image
-                className="aspect-[3/2] w-full rounded-2xl object-cover"
+                className="aspect-[3/2] w-full rounded-xl object-cover"
                 src={person.imageUrl}
                 alt=""
                 priority
