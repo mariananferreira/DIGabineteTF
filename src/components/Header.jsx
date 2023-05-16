@@ -79,7 +79,7 @@ function MobileNavigation() {
             <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
             <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
             <MobileNavLink href="#whatido">O nosso espaço</MobileNavLink>
-            <MobileNavLink href="#technologies">Parcerias</MobileNavLink>
+            <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
             <MobileNavLink href="#contacts">Contatos</MobileNavLink>
             <MobileNavLink href="#contacts">Perguntas frequentes</MobileNavLink>
           </Popover.Panel>
@@ -107,7 +107,7 @@ export function Header() {
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
               <NavLink href="#whatido">O nosso espaço</NavLink>
-              <NavLink href="#technologies">Parcerias</NavLink>
+              <NavLink href="#parceries">Parcerias</NavLink>
               <NavLink href="#technologies">Contatos</NavLink>
               <NavLink href="#contacts">Perguntas frequentes</NavLink>
             </div>

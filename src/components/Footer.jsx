@@ -39,7 +39,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Mariana Ferreira Portfolio
+            DI, Gabinete Terapia da Fala
           </p>
         </div>
       </Container>

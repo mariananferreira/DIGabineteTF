@@ -11,16 +11,20 @@ export function CallToAction() {
     >
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
-          <p className="secondaryTextNotSelected mt-4 text-lg tracking-tight">
-            Your business is not just a job, it is a journey. Embrace the
-            challenges, learn from the failures, and enjoy the successes along
-            the way.
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        </h2>
+          <p className="secondaryText text-gray-600 mt-4 text-lg tracking-tight">
+            O rastreio é realizado com o objetivo de haver um tempo de conversa
+            entre a Terapeuta, os Encarregados de Educação e a criança. <br/>Este
+            tempo permite esclarecer quais as maiores preocupações dos
+            cuidadores, permitir uma observação rápida das maiores dificuldades
+            da criança e orientar a família da melhor forma.
           </p>
           <Link
             href="#contacts"
             className="buttonStyle mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
           >
-            Get Started Today
+            Marque já!
           </Link>
         </div>
       </Container>

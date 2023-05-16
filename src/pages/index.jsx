@@ -8,6 +8,10 @@ import { AboutMe } from '@/components/AboutMe'
 import { WhatCanDo } from '@/components/WhatCanDo'
 import OurTeam from '@/components/OurTeam'
 import { Contacts } from '@/components/Contacts'
+import Parceries from '@/components/Parceries'
+import FAQs from '@/components/FAQs'
+
+
 
 
 export default function Home() {
@@ -21,9 +25,10 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <OurTeam />
-        <WhatCanDo />
+        <Parceries />
         <CallToAction />
         <Contacts />
+        <FAQs />
       </main>
       <Footer />
     </>
