@@ -222,7 +222,7 @@ export function Contacts() {
                     Rua 4 de Outubro, 153, <br />
                     4435-606, Baguim do Monte
                     <br />
-                    Sábados das 8h às 18h.{' '}
+                    Sábado 8h às 18h{' '}
                   </p>
                 </div>
               </div>

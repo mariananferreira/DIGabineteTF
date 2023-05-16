@@ -8,14 +8,14 @@ const people = [
     role: 'Terapeuta da Fala',
     imageUrl: debora,
     bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019. Tenho experiência em intervenção nas Perturbações da Comunicação, Linguagem, Fala e em crianças com Necessidades Educativas Especiais. Encontro-me neste momento a finalizar a especialização em Perturbações da Comunicação, Relação e Autismo. Espero que gostem do nosso projeto!',
-    twitterUrl: '#',
+    twitterUrl: 'https://www.instagram.com/tfdeborabrochado/',
   },
   {
     name: 'Inês leite',
     role: 'Terapeuta da Fala',
     imageUrl: ines,
     bio: 'Olá, eu sou a Inês e sou Terapeuta da Fala desde 2019. Sou especializada em Perturbações da Comunicação, Linguagem e Fala e estou a frequentar a especialização em Perturbações da Comunicação, Relação e Autismo. Tenho uma vasta experiência em intervenção com crianças com dificuldades ao nível da Leitura e da Escrita. Espero que o Gabinete DI consiga auxiliar diversas crianças e famílias!',
-    twitterUrl: '#',
+    twitterUrl: 'https://www.instagram.com/tfinesleite/',
   },
 ]
 
@@ -55,6 +55,8 @@ export default function OurTeam() {
                   <a
                     href={person.twitterUrl}
                     className="text-gray-400 hover:text-gray-500"
+                    target="blank"
+                    rel="noreferrer"
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
