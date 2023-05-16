@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 import { Container } from '@/components/Container'
-import SM from '@/images/imgSM.png'
+import SM from '@/images/espaco.jpeg'
 
 export function Contacts() {
   const form = useRef()
@@ -32,14 +32,13 @@ export function Contacts() {
     <section id="contacts" aria-label="" className=" py-20 sm:py-32">
       <Container>
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="marginAdjust sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
-            Don&apos;t be shy
+          <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
+            Contatos
           </h2>
 
           <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            If you have a project in mind or would like to make an enquiry
-            simply and If you think we&apos;d be a good match contact me, via
-            email or whatsapp.
+            Se tiver alguma dúvida ou quiser marcar um rastreio gratuito utilize
+            o formulário abaixo, responderemos com a maior brevidade.
           </p>
         </div>
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -143,14 +142,14 @@ export function Contacts() {
                   </svg>
                 </div>
                 <h3 className="text-center text-lg text-white sm:text-2xl">
-                  Send me a message on social media
+                  Redes Sociais
                 </h3>
                 <div className="socialMedia sm:col-span-2 sm:flex">
                   <ul role="list" className="socialMedia mt-8 flex space-x-12">
                     <li>
                       <a
-                        className="name hover:text-indigo-100"
-                        href="https://api.whatsapp.com/send?phone=912220291&text=Hi, I would like to know more informations!"
+                        className=" hover:text-indigo-100"
+                        href="https://api.whatsapp.com/send?phone=933281493&text=Olá, Gostaria de marcar um rastreio gratuito!"
                         target="blank"
                         rel="noreferrer"
                       >
@@ -167,8 +166,8 @@ export function Contacts() {
                     </li>
                     <li>
                       <a
-                        className="name hover:text-indigo-100"
-                        href="https://m.me/marianacnferreira"
+                        className=" hover:text-indigo-100"
+                        href="https://m.me/Gabinetetf.di"
                         target="blank"
                         rel="noreferrer"
                       >
@@ -185,8 +184,8 @@ export function Contacts() {
                     </li>
                     <li>
                       <a
-                        className="name hover:text-indigo-100"
-                        href="https://www.instagram.com/marianacnferreira/"
+                        className=" hover:text-indigo-100"
+                        href="https://www.instagram.com/gabinetetf.di/"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -209,7 +208,13 @@ export function Contacts() {
                   alt=""
                   priority
                 />
+                <p className="text-center text-lg text-white sm:text-xl">
+                  Rua 4 de Outubro, 153, 4435-606, Baguim do Monte
+                  <br />
+                  Sábados das 8h às 18h.{' '}
+                </p>
               </div>
+
               <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
                 <form
                   ref={form}

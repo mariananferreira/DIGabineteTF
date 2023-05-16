@@ -11,7 +11,8 @@ export function CallToAction() {
     >
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+          Marque o seu rastreio gratuito!
         </h2>
           <p className="secondaryText text-gray-600 mt-4 text-lg tracking-tight">
             O rastreio é realizado com o objetivo de haver um tempo de conversa

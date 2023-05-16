@@ -1,14 +1,12 @@
 import Image from 'next/image'
 import morangos from '@/images/mor.png'
-import ideia from '@/images/react.png'
-import three from '@/images/three.png'
 
 export default function Parceries() {
   return (
     <section id="parceries" aria-label="parceries">
-      <div className="py-24 sm:py-28">
+      <div className="py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="primaryColor text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
             Parcerias
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">

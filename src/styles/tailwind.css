@@ -38,9 +38,6 @@
   line-height: 110%;
 }
 
-.background {
-  background-color: #fff;
-}
 
 .summmaryText {
   color: #6b6b6b;
@@ -122,12 +119,6 @@
   font-size: 1.1rem;
   text-indent: 30px;
 
-}
-.secondaryTitlesNotSelected {
-  color: #b98b74;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: justify;
-  font-size: 1.1rem;
 }
 
 .firstTitle {
