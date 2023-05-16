@@ -7,7 +7,7 @@
 }
 
 .name {
-  color: #E8CFC2;
+  color: #e8cfc2;
   font-size: 30px;
   padding-top: 2rem;
 }
@@ -19,10 +19,14 @@
   margin-top: 30px;
   text-indent: 30px;
   line-height: 1.9rem;
-  
 }
 
-.logo{
+.address {
+  padding-top: 30px;
+  font-size: medium;
+}
+
+.logo {
   width: 20em;
 }
 
@@ -37,7 +41,6 @@
   font-weight: 200;
   line-height: 110%;
 }
-
 
 .summmaryText {
   color: #6b6b6b;
@@ -71,12 +74,11 @@
   justify-content: center;
 }
 
-
 .secondary {
-  background-color: #E8CFC2;
+  background-color: #e8cfc2;
 }
 .primaryColor {
-  color: #E8CFC2;
+  color: #e8cfc2;
 }
 
 .primaryBack {
@@ -107,7 +109,6 @@
   text-align: justify;
 }
 
-
 .secondaryTitles {
   color: #192710;
   font-family: 'Source Sans Pro', sans-serif;
@@ -118,7 +119,6 @@
 .secondaryText {
   font-size: 1.1rem;
   text-indent: 30px;
-
 }
 
 .firstTitle {
@@ -129,6 +129,6 @@
   color: #b98b74;
 }
 
-.buttonStyle{
+.buttonStyle {
   background-color: #b98b74;
 }
