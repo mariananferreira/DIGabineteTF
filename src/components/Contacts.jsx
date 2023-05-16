@@ -142,7 +142,7 @@ export function Contacts() {
                   </svg>
                 </div>
                 <h3 className="text-center text-lg text-white sm:text-2xl">
-                  Redes Sociais
+                  Contacte-nos através das nossas Redes Sociais
                 </h3>
                 <div className="socialMedia sm:col-span-2 sm:flex">
                   <ul role="list" className="socialMedia mt-8 flex space-x-12">
@@ -208,21 +208,23 @@ export function Contacts() {
                   alt=""
                   priority
                 />
+
                 <div className="contactAlign">
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M18,4.48a8.45,8.45,0,0,0-12,12l5.27,5.28a1,1,0,0,0,1.42,0L18,16.43A8.45,8.45,0,0,0,18,4.48ZM16.57,15,12,19.59,7.43,15a6.46,6.46,0,1,1,9.14,0ZM9,7.41a4.32,4.32,0,0,0,0,6.1,4.31,4.31,0,0,0,7.36-3,4.24,4.24,0,0,0-1.26-3.05A4.3,4.3,0,0,0,9,7.41Zm4.69,4.68a2.33,2.33,0,1,1,.67-1.63A2.33,2.33,0,0,1,13.64,12.09Z" />
-                </svg>
-                <p className="address">
-                  Rua 4 de Outubro, 153, 4435-606, Baguim do Monte
-                  <br />
-                  Sábados das 8h às 18h.{' '}
-                </p>
-              </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M18,4.48a8.45,8.45,0,0,0-12,12l5.27,5.28a1,1,0,0,0,1.42,0L18,16.43A8.45,8.45,0,0,0,18,4.48ZM16.57,15,12,19.59,7.43,15a6.46,6.46,0,1,1,9.14,0ZM9,7.41a4.32,4.32,0,0,0,0,6.1,4.31,4.31,0,0,0,7.36-3,4.24,4.24,0,0,0-1.26-3.05A4.3,4.3,0,0,0,9,7.41Zm4.69,4.68a2.33,2.33,0,1,1,.67-1.63A2.33,2.33,0,0,1,13.64,12.09Z" />
+                  </svg>
+                  <p className="address">
+                    Rua 4 de Outubro, 153, <br />
+                    4435-606, Baguim do Monte
+                    <br />
+                    Sábados das 8h às 18h.{' '}
+                  </p>
+                </div>
               </div>
 
               <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
@@ -315,6 +317,30 @@ export function Contacts() {
                     </button>
                   </div>
                 </form>
+
+                <ul className="mobileIcon mt-10">
+                  <li>
+                    <span className="sr-only ">call</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-phone-call"
+                    >
+                      <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </li>
+                  <a href="tel:933281493">
+                    <p className="mobileNumber text-center text-lg sm:text-xl">
+                      +351 933 281 493
+                    </p>
+                  </a>
+                </ul>
               </div>
             </div>
           </div>

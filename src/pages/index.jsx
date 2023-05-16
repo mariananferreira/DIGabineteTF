@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DI Gabinete de Terapia da Fala</title>
+        <title>DI, Gabinete Terapia da Fala</title>
       </Head>
       <Header />
       <main className='primaryBack'>

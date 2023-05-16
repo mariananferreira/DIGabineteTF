@@ -21,11 +21,6 @@
   line-height: 1.9rem;
 }
 
-.address {
-  padding-top: 30px;
-  font-size: medium;
-}
-
 .logo {
   width: 20em;
 }
@@ -42,13 +37,6 @@
   line-height: 110%;
 }
 
-.summmaryText {
-  color: #6b6b6b;
-  font-size: 16px;
-  text-align: center;
-  text-indent: 30px;
-}
-
 .title {
   color: #b98b74;
   font-weight: bold;
@@ -59,19 +47,23 @@
 }
 
 .mobileNumber {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #1e1e26;
+  padding-left: 10px;
 }
 
 .mobileIcon {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .contactAlign {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding-top: 40px;
+}
+
+.address {
+  font-size: medium;
 }
 
 .secondary {
