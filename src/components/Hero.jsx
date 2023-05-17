@@ -25,7 +25,7 @@ export default function Example() {
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Bem-vindo(a) ao nosso gabinete de terapia da fala! <br />
                 Estamos sediados em Baguim do Monte e a nossa principal missão é
-                ajudar pessoas de todas as idades superar desafios relacionados
+                ajudar pessoas de todas as idades a superar desafios relacionados
                 com a fala e linguagem. O nosso objetivo é fornecer um ambiente
                 acolhedor e personalizado, onde cada indivíduo receba o suporte
                 necessário para alcançar o seu pleno potencial de comunicação.
@@ -75,7 +75,7 @@ export default function Example() {
                 <li>
                   <a
                     className="name hover:text-indigo-100"
-                    href=""
+                    href="https://www.facebook.com/profile.php?id=100090192008423"
                     target="blank"
                     rel="noreferrer"
                   >

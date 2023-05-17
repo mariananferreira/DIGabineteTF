@@ -29,7 +29,7 @@ export function Contacts() {
   }
 
   return (
-    <section id="contacts" aria-label="" className=" py-20 sm:py-32">
+    <section id="contacts" aria-label="" className="py-10 sm:py-40">
       <Container>
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
@@ -311,7 +311,7 @@ export function Contacts() {
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
                       type="submit"
-                      className="secondary mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                      className="secondary mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium  shadow-sm hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
                     >
                       Submit
                     </button>

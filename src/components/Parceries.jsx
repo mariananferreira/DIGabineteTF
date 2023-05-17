@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import morangos from '@/images/mor.png'
-import ideia from '@/images/ideia.png'
-import seb from '@/images/seb.png'
+import morangos from '@/images/mor.jpeg'
+import ideia from '@/images/ideia.jpeg'
+import seb from '@/images/seb.jpeg'
 
 
 export default function Parceries() {
@@ -20,21 +20,21 @@ export default function Parceries() {
           </p>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <Image
-              className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
               src={morangos}
               alt=""
               width={180}
               height={50}
             />
             <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
               src={ideia}
               alt=""
               width={180}
               height={50}
             />
             <Image
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
               src={seb}
               alt=""
               width={180}

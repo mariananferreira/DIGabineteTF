@@ -22,8 +22,10 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-      <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+    <section id="faqs" aria-label="frequent questions">
+
+    <div className="mx-auto max-w-7xl px-6 sm:py-24 lg:px-8">
+      <div className="max-w-2xl md:text-center xl:max-w-none">
         <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
           Perguntas Frequentes
         </h2>
@@ -31,7 +33,7 @@ export default function FAQs() {
           Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
           <a
             href="#contacts"
-            className="font-semibold text-pink-300 hover:text-indigo-500"
+            className="primaryColor text-bold font-semibold hover:text-rose-100"
           >
             através do formulário de contacto,
           </a>{' '}
@@ -54,5 +56,7 @@ export default function FAQs() {
         </dl>
       </div>
     </div>
+    </section>
+
   )
 }

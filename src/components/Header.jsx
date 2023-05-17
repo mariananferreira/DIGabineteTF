@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
+import logo from '@/images/logo4.png'
 
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
@@ -74,14 +75,14 @@ function MobileNavigation() {
         >
           <Popover.Panel
             as="div"
-            className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-[rgba(0,0,0,0.3)] p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
+            className="navBarColor absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
             <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
             <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
             <MobileNavLink href="#whatido">O nosso espaço</MobileNavLink>
             <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
             <MobileNavLink href="#contacts">Contatos</MobileNavLink>
-            <MobileNavLink href="#contacts">Perguntas frequentes</MobileNavLink>
+            <MobileNavLink href="#faqs">Perguntas frequentes</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -92,7 +93,7 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header
-      className="fixed top-0 z-50 flex w-full flex-wrap items-center justify-between bg-[rgba(0,0,0,0.3)] px-4 py-3 font-bold shadow-md shadow-slate-900/5 transition duration-500 sm:px-6  lg:px-8 
+      className="navBarColor fixed top-0 z-50 flex w-full flex-wrap items-center justify-between px-4 py-3 font-bold shadow-md shadow-slate-900/5 transition duration-500 sm:px-6  lg:px-8 
     "
     >
       <div className="mr-6 flex lg:hidden">
@@ -102,14 +103,15 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="relative flex flex-grow basis-0 items-center">
             <Link href="#" aria-label="Home">
+              <Image className="h-20 w-20" src={logo} alt="nut" priority />
             </Link>
             <div className="hidden space-x-4 sm:ml-6 lg:block">
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
               <NavLink href="#whatido">O nosso espaço</NavLink>
               <NavLink href="#parceries">Parcerias</NavLink>
-              <NavLink href="#technologies">Contatos</NavLink>
-              <NavLink href="#contacts">Perguntas frequentes</NavLink>
+              <NavLink href="#contacts">Contatos</NavLink>
+              <NavLink href="#faqs">Perguntas frequentes</NavLink>
             </div>
           </div>
         </nav>

@@ -26,7 +26,7 @@
 }
 
 .secondaryColor {
-  color: #b98b7485;
+  color: #fff;
 }
 
 .test {
@@ -78,14 +78,7 @@
 }
 
 .buttonStyle {
-  color: #1e1e26;
   font-family: 'Carme', sans-serif;
-}
-
-.primary {
-  color: #fff;
-  font-size: 20x;
-  margin-left: 5px;
 }
 
 .socialMedia {
@@ -113,14 +106,14 @@
   text-indent: 30px;
 }
 
-.firstTitle {
-  color: #92c2df;
-}
-
-.firstIcons {
-  color: #b98b74;
-}
-
 .buttonStyle {
-  background-color: #b98b74;
+  background-color: #fff;
+}
+
+.navBarColor {
+  background-color: rgb(232 207 194 / 55%);
+}
+
+.navBarColorText:hover {
+  background-color: #e8cfc2;
 }
