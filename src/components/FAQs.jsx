@@ -31,7 +31,7 @@ export default function FAQs() {
           Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
           <a
             href="#contacts"
-            className="font-semibold text-indigo-400 hover:text-indigo-500"
+            className="font-semibold text-pink-300 hover:text-indigo-500"
           >
             através do formulário de contacto,
           </a>{' '}

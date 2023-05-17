@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import morangos from '@/images/mor.png'
+import ideia from '@/images/ideia.png'
+import seb from '@/images/seb.png'
+
 
 export default function Parceries() {
   return (
@@ -9,7 +12,7 @@ export default function Parceries() {
           <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
             Parcerias
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
             Temos a honra de ter parceria com algumas instituições. Todos os
             alunos dos nossos parceiros, que necessitarem dos nossos serviços,
             usufruem de 10% de desconto em consultas unitárias em todo o
@@ -19,23 +22,23 @@ export default function Parceries() {
             <Image
               className="col-span-2 max-h-20 w-full object-contain lg:col-span-1"
               src={morangos}
-              alt="Transistor"
+              alt=""
               width={180}
               height={50}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
-              alt="Reform"
-              width={158}
-              height={48}
+              src={ideia}
+              alt=""
+              width={180}
+              height={50}
             />
             <Image
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
-              alt="Tuple"
-              width={158}
-              height={48}
+              src={seb}
+              alt=""
+              width={180}
+              height={50}
             />
           </div>
         </div>
