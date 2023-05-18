@@ -9,6 +9,7 @@ import OurTeam from '@/components/OurTeam'
 import { Contacts } from '@/components/Contacts'
 import Parceries from '@/components/Parceries'
 import FAQs from '@/components/FAQs'
+import OurSpace from '@/components/OurSpace'
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <OurTeam />
+        <OurSpace />
         <Parceries />
         <CallToAction />
         <Contacts />

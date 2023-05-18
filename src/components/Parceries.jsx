@@ -18,7 +18,7 @@ export default function Parceries() {
             usufruem de 10% de desconto em consultas unitárias em todo o
             processo de intervenção.
           </p>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <Image
               className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
               src={morangos}

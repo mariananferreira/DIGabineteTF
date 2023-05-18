@@ -117,3 +117,15 @@
 .navBarColorText:hover {
   background-color: #e8cfc2;
 }
+
+.galleryImage{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.galleryContainer {
+  max-width: 600px; /* Adjust the width as needed */
+  margin: 0 auto;
+  padding-top: 30px;
+}
