@@ -24,7 +24,7 @@ export default function FAQs() {
   return (
     <section id="faqs" aria-label="frequent questions">
 
-    <div className="mx-auto max-w-7xl px-6 sm:py-24 lg:px-8">
+    <div className="mx-auto max-w-7xl px-6 sm:py-25 lg:px-8">
       <div className="max-w-2xl md:text-center xl:max-w-none">
         <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
           Perguntas Frequentes

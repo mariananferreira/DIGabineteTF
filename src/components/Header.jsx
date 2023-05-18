@@ -79,7 +79,7 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
             <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
-            <MobileNavLink href="#whatido">O nosso espaço</MobileNavLink>
+            <MobileNavLink href="#ourspace">O nosso espaço</MobileNavLink>
             <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
             <MobileNavLink href="#contacts">Contatos</MobileNavLink>
             <MobileNavLink href="#faqs">Perguntas frequentes</MobileNavLink>
@@ -101,14 +101,14 @@ export function Header() {
       </div>
       <Container>
         <nav className="relative z-50 flex justify-between">
-          <div className="relative flex flex-grow basis-0 items-center">
-            <Link href="#" aria-label="Home">
-              <Image className="h-20 w-20" src={logo} alt="nut" priority />
-            </Link>
-            <div className="hidden space-x-4 sm:ml-6 lg:block">
+          <div className="hidden space-x-4 sm:ml-6 lg:block">
+            <div className="relative flex flex-grow basis-0 items-center">
+              <Link href="#" aria-label="Home">
+                <Image className="h-15 w-20" src={logo} alt="nut" priority />
+              </Link>
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
-              <NavLink href="#whatido">O nosso espaço</NavLink>
+              <NavLink href="#ourspace">O nosso espaço</NavLink>
               <NavLink href="#parceries">Parcerias</NavLink>
               <NavLink href="#contacts">Contatos</NavLink>
               <NavLink href="#faqs">Perguntas frequentes</NavLink>

@@ -23,7 +23,7 @@ export function CallToAction() {
           </p>
           <Link
             href="#contacts"
-            className="buttonStyle mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium shadow-sm hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+            className="buttonStyle mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium shadow-sm hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
           >
             Marque já!
           </Link>
