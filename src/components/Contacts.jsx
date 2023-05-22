@@ -239,7 +239,7 @@ export function Contacts() {
                       htmlFor="first-name"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Name
+                      Nome
                     </label>
                     <div className="mt-1">
                       <input
@@ -273,7 +273,7 @@ export function Contacts() {
                       htmlFor="subject"
                       className="block text-sm font-medium text-gray-900"
                     >
-                      Subject
+                      Assunto
                     </label>
                     <div className="mt-1">
                       <input
@@ -290,10 +290,10 @@ export function Contacts() {
                         htmlFor="message"
                         className="block text-sm font-medium text-gray-900"
                       >
-                        Message
+                        Mensagem
                       </label>
                       <span id="message-max" className="text-sm text-gray-500">
-                        Max. 500 characters
+                        Max. 500 caracteres.
                       </span>
                     </div>
                     <div className="mt-1">
