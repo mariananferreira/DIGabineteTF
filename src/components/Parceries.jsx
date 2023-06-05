@@ -3,7 +3,6 @@ import morangos from '@/images/mor.jpeg'
 import ideia from '@/images/ideia.jpeg'
 import seb from '@/images/seb.jpeg'
 
-
 export default function Parceries() {
   return (
     <section id="parceries" aria-label="parceries">
@@ -13,10 +12,11 @@ export default function Parceries() {
             Parcerias
           </h2>
           <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Temos a honra de ter parceria com algumas instituições. Todos os
-            alunos dos nossos parceiros, que necessitarem dos nossos serviços,
-            usufruem de 10% de desconto em consultas unitárias em todo o
-            processo de intervenção.
+            O progresso é um caminho que não se traça sozinho e é com grande
+            satisfação que temos o privilégio de colaborar com algumas
+            instituições! Todos os alunos provenientes das parcerias
+            estabelecidas com o Gabinete DI poderão usufruir de um desconto de
+            10% em consultas unitárias em todo o processo de intervenção.
           </p>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <Image

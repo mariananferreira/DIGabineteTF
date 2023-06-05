@@ -105,20 +105,32 @@ export function AboutMe() {
                   Quem somos, <br />
                 </h2>
                 <p className="textAboutMe">
-                  Somos duas amigas e colegas de trabalho que decidiram entrar
-                  nesta aventura e criar um espaço onde pudessem fazer o que
-                  mais gostam e ajudar crianças e famílias que necessitem do
-                  apoio da Terapia da Fala para o seu bom desenvolvimento.
+                  O Gabinete DI é um Gabinete de Terapia da Fala, sediado em
+                  Baguim do Monte, Gondomar, que nasceu com um propósito
+                  especial. Enquanto amigas e colegas de trabalho, somos duas
+                  profissionais que decidiram abraçar uma nova aventura e criar
+                  um espaço no qual possamos exercer aquilo que mais gostamos e
+                  ajudar crianças e famílias que necessitem de apoio na valência
+                  de Terapia da Fala para o seu bom desenvolvimento! ento.
                 </p>
                 <p className="textAboutMe">
-                  O nosso principal objetivo é prestar um serviço de qualidade
-                  ao nível Pediátrico.
+                  No nosso gabinete, priorizamos o atendimento pediátrico e
+                  procuramos oferecer um serviço de qualidade excecional,
+                  adaptado às necessidades específicas de cada paciente, tendo
+                  em consideração a sua individualidade. A nossa abordagem passa
+                  ainda por integrar e trabalhar de perto com as famílias, de
+                  forma a incentivar a participação ativa e o envolvimento das
+                  mesmas no decorrer da intervenção.
                 </p>
                 <p className="textAboutMe">
-                  Somos especializadas em Perturbações da Comunicação, Linguagem
-                  e Fala, na intervenção com o diagnóstico de Autismo e temos
-                  uma vasta experiência em intervenção com crianças com
-                  perturbações da leitura e da escrita.
+                  A nossa área de especialização estende-se a Perturbações da
+                  Comunicação, Linguagem e Fala e à intervenção com o
+                  diagnóstico de Autismo, não esquecendo a vasta experiência em
+                  intervenção com crianças com Perturbações da Leitura e da
+                  Escrita.
+                </p>
+                <p className="textAboutMe">
+                Explore as opções de serviços que oferecemos e descubra de que forma o(a) podemos ajudar!
                 </p>
               </div>
             </div>

@@ -7,14 +7,14 @@ const people = [
     name: 'Débora Brochado',
     role: 'Terapeuta da Fala',
     imageUrl: debora,
-    bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019. Tenho experiência em intervenção nas Perturbações da Comunicação, Linguagem, Fala e em crianças com Necessidades Educativas Especiais. Encontro-me neste momento a finalizar a especialização em Perturbações da Comunicação, Relação e Autismo. Espero que gostem do nosso projeto!',
+    bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019! O meu percurso académico passou pela Escola Superior de Saúde do Instituto Politécnico do Porto e ao longo destes anos, fui adquirindo experiência na intervenção de questões relacionadas às Perturbações da Comunicação, Linguagem e Fala, bem como no acompanhamento de crianças com Necessidades Educativas Especiais.  Sou também especializada em Perturbações da Comunicação, Relação e Autismo, uma das áreas que mais me desperta interesse e que mais gosto de explorar. Através do Gabinete DI, espero conseguir ajudar o máximo de famílias possível e que este projeto se torne uma referência e seja reconhecido pelo profissionalismo, responsabilidade e respeito por todos os que nos procuram que nos é característico!',
     twitterUrl: 'https://www.instagram.com/tfdeborabrochado/',
   },
   {
     name: 'Inês leite',
     role: 'Terapeuta da Fala',
     imageUrl: ines,
-    bio: 'Olá, eu sou a Inês e sou Terapeuta da Fala desde 2019. Sou especializada em Perturbações da Comunicação, Linguagem e Fala e estou a frequentar a especialização em Perturbações da Comunicação, Relação e Autismo. Tenho uma vasta experiência em intervenção com crianças com dificuldades ao nível da Leitura e da Escrita. Espero que o Gabinete DI consiga auxiliar diversas crianças e famílias!',
+    bio: 'Olá, eu sou a Inês e sou Terapeuta da fala desde 2019. Formei-me na Escola Superior de Saúde do Instituto Politécnico do Porto (ESS). Neste meu percurso especializei-me na área Pediátrica e é nesta área que me sinto mais feliz e completa. Sou especialista em Perturbações da Comunicação, Linguagem e Fala, pela CRIAP e em Perturbações da comunicação, Relação e Autismo, pela SeedGo. Realizo intervenção com crianças e com estas diversas perturbações desde que terminei a licenciatura. O Gabinete DI é para mim, ao nível pessoal e profissional, um grande desafio. Poderão sempre contar com a minha sinceridade, dedicação e profissionalismo. Espero que o nosso projeto auxilie muitas famílias e crianças nesta viagem que é a Terapia da Fala.',
     twitterUrl: 'https://www.instagram.com/tfinesleite/',
   },
 ]

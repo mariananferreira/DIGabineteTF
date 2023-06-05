@@ -10,16 +10,17 @@ export function CallToAction() {
       className="secondary relative overflow-hidden py-32"
     >
       <Container className="relative">
-        <div className="mx-auto text-center max-w-lg ">
+        <div className="mx-auto max-w-lg text-center ">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
             Marque o seu rastreio gratuito!
           </h2>
           <p className="secondaryText mt-4 text-lg tracking-tight text-gray-600">
-            O rastreio dura entre 20 a 30 minutos e tem como principal objetivo
-            perceber as necessidades do utente e da sua família <br />
-            No final do rastreio a terapeuta indica se há necessidade ou não de
-            uma intervenção e caso esta se confirme, o processo inicia-se de uma
-            forma planeada e estruturada.
+            O rastreio é realizado com o objetivo de proporcionar um espaço de
+            diálogo entre a Terapeuta, os Encarregados de Educação e a Criança.
+            Durante esse tempo, é então possível perceber quais são as maiores
+            preocupações dos cuidadores, esclarecê-las, proceder a uma breve
+            observação das dificuldades enfrentadas pela criança e fornecer
+            orientações adaptadas à família de forma eficaz.
           </p>
           <Link
             href="#contacts"
