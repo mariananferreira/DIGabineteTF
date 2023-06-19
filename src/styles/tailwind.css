@@ -20,6 +20,9 @@
   text-indent: 30px;
   line-height: 1.9rem;
 }
+.logoSizeNavbar{
+  width: 10rem;
+}
 
 .logo {
   width: 20em;

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
-import logo from '@/images/logo4.png'
+import logo from '@/images/logo3.png'
 
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
@@ -93,7 +93,7 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header
-      className="navBarColor fixed top-0 z-50 flex w-full flex-wrap items-center justify-between px-4 py-3 font-bold shadow-md shadow-slate-900/5 transition duration-500 sm:px-6  lg:px-8 
+      className="navBarColor fixed top-0 z-50 flex w-full flex-wrap items-center justify-between px-4 font-bold shadow-md shadow-slate-900/5 transition duration-500 sm:px-6  lg:px-8 
     "
     >
       <div className="mr-6 flex lg:hidden">
@@ -104,14 +104,14 @@ export function Header() {
           <div className="hidden space-x-4 sm:ml-6 lg:block">
             <div className="relative flex flex-grow basis-0 items-center">
               <Link href="#" aria-label="Home">
-                <Image className="h-15 w-20" src={logo} alt="nut" priority />
+                <Image className="logoSizeNavbar" src={logo} alt="nut" priority />
               </Link>
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
               <NavLink href="#ourspace">O nosso espaço</NavLink>
               <NavLink href="#parceries">Parcerias</NavLink>
               <NavLink href="#contacts">Contatos</NavLink>
-              <NavLink href="#faqs">Perguntas frequentes</NavLink>
+              <NavLink href="#faqs">Perguntas frequentes</NavLink>   
             </div>
           </div>
         </nav>

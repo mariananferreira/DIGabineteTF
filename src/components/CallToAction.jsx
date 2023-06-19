@@ -14,7 +14,7 @@ export function CallToAction() {
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
             Marque o seu rastreio gratuito!
           </h2>
-          <p className="secondaryText mt-4 text-lg tracking-tight text-gray-600">
+          <p className="mt-4 text-xl mb-3 tracking-tight text-gray-600">
             O rastreio é realizado com o objetivo de proporcionar um espaço de
             diálogo entre a Terapeuta, os Encarregados de Educação e a Criança.
             Durante esse tempo, é então possível perceber quais são as maiores
