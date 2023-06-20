@@ -22,14 +22,14 @@ const people = [
 export default function OurTeam() {
   return (
     <section id="ourteam" aria-label="our team">
-      <div className="bg-white py-24 md:py-32 lg:py-20">
+      <div className="py-24 md:py-32 lg:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="primaryColor text-3xl font-bold tracking-tight sm:text-4xl">
               Corpo técnico
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Conheça a nossa equipa composta pela Débora e Inês.
+              Conheça a nossa equipa composta pela Terapeuta Débora e pela Terapeuta Inês.  
             </p>
           </div>
           <ul
@@ -39,7 +39,7 @@ export default function OurTeam() {
             {people.map((person) => (
               <li key={person.name}>
                 <Image
-                  className="aspect-[3/2] w-full rounded-xl object-cover"
+                  className="aspect-[2/2] w-full rounded-xl object-cover"
                   src={person.imageUrl}
                   alt=""
                   priority
