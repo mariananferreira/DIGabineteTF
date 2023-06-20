@@ -30,58 +30,56 @@ const faqs = [
 export default function FAQs() {
   return (
     <section id="faqs" aria-label="frequent questions">
-      <div className="bg-white">
-        <div className="sm:py-25 mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="max-w-2xl md:text-center xl:max-w-none">
-            <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
-              Perguntas Frequentes
-            </h2>
-            <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-              Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
-              <a
-                href="#contacts"
-                className="primaryColor text-bold font-semibold hover:text-rose-100"
-              >
-                através do formulário de contacto,
-              </a>{' '}
-              que entraremos em contacto consigo com a maior brevidade.
-            </p>
-            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-              {faqs.map((faq) => (
-                <Disclosure as="div" key={faq.question} className="pt-6">
-                  {({ open }) => (
-                    <>
-                      <dt>
-                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                          <span className="text-base font-semibold leading-7">
-                            {faq.question}
-                          </span>
-                          <span className="ml-6 flex h-7 items-center">
-                            {open ? (
-                              <MinusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            ) : (
-                              <PlusSmallIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            )}
-                          </span>
-                        </Disclosure.Button>
-                      </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-base text-justify leading-7 text-gray-600">
-                          {faq.answer}
-                        </p>
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              ))}
-            </dl>
-          </div>
+      <div className="sm:py-25 pb-10 mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="max-w-2xl md:text-center xl:max-w-none">
+          <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
+            Perguntas Frequentes
+          </h2>
+          <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+            Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
+            <a
+              href="#contacts"
+              className="primaryColor text-bold font-semibold hover:text-rose-100"
+            >
+              através do formulário de contacto,
+            </a>{' '}
+            que entraremos em contacto consigo com a maior brevidade.
+          </p>
+          <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+            {faqs.map((faq) => (
+              <Disclosure as="div" key={faq.question} className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt>
+                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                        <span className="text-base font-semibold leading-7">
+                          {faq.question}
+                        </span>
+                        <span className="ml-6 flex h-7 items-center">
+                          {open ? (
+                            <MinusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <PlusSmallIcon
+                              className="h-6 w-6"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                      <p className="text-justify text-base leading-7 text-gray-600">
+                        {faq.answer}
+                      </p>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
+          </dl>
         </div>
       </div>
     </section>
