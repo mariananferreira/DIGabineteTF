@@ -1,11 +1,20 @@
 import Image from 'next/image'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Container } from '@/components/Container'
 import SM from '@/images/espaco.jpeg'
 
 export function Contacts() {
+  const [status, setStatus] = useState(" ");
+
+  const showToastMessage = () => {
+    toast.success('E-mail enviado com sucesso!', {
+        position: toast.POSITION.TOP_CENTER
+    });
+  }; 
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -142,7 +151,8 @@ export function Contacts() {
                   </svg>
                 </div>
                 <h3 className="text-center text-lg text-white sm:text-2xl">
-                  Contacte-nos através das nossas Redes Sociais
+                  Contacte-nos via telefónica, 933 281 493 ou pelas redes
+                  sociais.
                 </h3>
                 <div className="socialMedia sm:col-span-2 sm:flex">
                   <ul role="list" className="socialMedia mt-8 flex space-x-12">
@@ -309,11 +319,13 @@ export function Contacts() {
                   </div>
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
+                      onClick={showToastMessage}
                       type="submit"
                       className="secondary mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium  shadow-sm hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
                     >
                       Enviar
                     </button>
+                    <ToastContainer />
                   </div>
                 </form>
 

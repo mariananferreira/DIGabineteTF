@@ -3,15 +3,24 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
   {
-    question: 'O Gabinete DI trabalha com o SNS ou a Segurança Social?',
+    question: 'Quanto tempo demora um rastreio?',
     answer:
-      'Sim, o nosso gabinete auxilia os pais no processo de submissão dos documentos necessários para o Subsídio de Educação Especial, no entanto, os mesmos terão de antecipar o pagamento das consultas a privado durante o período de aceitação do pedido e do respetivo envio do subsídio. Assim que o apoio for dispensado, a criança poderá usufruir dessas consultas.',
+      'O rastreio tem um tempo estimado de 30 minutos, contudo este tempo não é exaustivo sendo adaptado a cada caso.',
   },
-
   {
-    question: 'O Gabinete DI tem acordo com algum seguro?',
+    question: 'O Gabinete DI trabalha com o SNS?',
     answer:
-      'Não temos nenhum acordo direto, no entanto, se a apólice do seguro assim o permitir, poderão submeter as faturas ao seguro para possível reembolso.',
+      'Não, o nosso gabinete não tem acordo com o Sistema Nacional de Saúde (P1).',
+  },
+  {
+    question: 'O vosso Gabinete trabalha com a Segurança Social?',
+    answer:
+      'Sim, o nosso gabinete auxilia os pais no processo de submissão dos documentos necessários para o Subsídio de Educação Especial, no entanto, os mesmos terão de realizar o pagamento das consultas a privado durante o período de aceitação do subsídio. Assim que o apoio for dispensado, a criança poderá usufruir das consultas comparticipadas.',
+  },
+  {
+    question: 'O Gabinete DI tem acordo com algum seguro ou ADSE?',
+    answer:
+      'Não temos nenhum acordo direto, no entanto, se a apólice do seguro assim o permitir, poderão submeter as faturas ao seguro para possível reembolso. Esta submissão da fatura, ocorre de igual forma na ADSE.',
   },
   {
     question: 'O vosso Gabinete trabalha com crianças com Espectro do Autismo?',
