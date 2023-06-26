@@ -20,7 +20,7 @@ const faqs = [
   {
     question: 'O Gabinete DI tem acordo com algum seguro ou ADSE?',
     answer:
-      'Não temos nenhum acordo direto, no entanto, se a apólice do seguro assim o permitir, poderão submeter as faturas ao seguro para possível reembolso. Esta submissão da fatura, ocorre de igual forma na ADSE.',
+      'Não temos nenhum acordo direto, no entanto, se a apólice do seguro assim o permitir poderão submeter as faturas ao seguro para possível reembolso. Esta submissão da fatura, ocorre de igual forma na ADSE.',
   },
   {
     question: 'O vosso Gabinete trabalha com crianças com Espectro do Autismo?',
