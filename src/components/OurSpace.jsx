@@ -54,32 +54,34 @@ const products = [
 
 export default function Photos() {
   return (
-    <Container>
-      <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-        <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
-          O nosso espaço
-        </h2>
-
-        <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-          Venha conhecer o nosso gabinete em Baguim do Monte.
-        </p>
-      </div>
-      <div className="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 ">
-          {products.map((product) => (
-            <a key={product.id} className="group text-sm">
-              <div className="aspect-h-2 aspect-w-2 w-full overflow-hidden  bg-gray-100 group-hover:opacity-75">
-                <Image
-                  className="h-full w-full object-cover object-center"
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  priority
-                />
-              </div>
-            </a>
-          ))}
+    <section id="ourspace" aria-label="our space">
+      <Container>
+       <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+          <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
+            O nosso espaço
+          </h2>
+          <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+            Venha conhecer o nosso gabinete em Baguim do Monte.
+          </p>
         </div>
-      </div>
-    </Container>
+        <div className="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 ">
+            {products.map((product) => (
+              <a key={product.id} className="group text-sm">
+                <div className="aspect-h-2 aspect-w-2 w-full overflow-hidden  bg-gray-100 group-hover:opacity-75">
+                  <Image
+                    className="h-full w-full object-cover object-center"
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    priority
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </section>
+
   )
 }

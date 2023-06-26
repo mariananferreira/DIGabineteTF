@@ -78,7 +78,7 @@ export function AboutMe() {
                   profissionais que decidiram abraçar uma nova aventura e criar
                   um espaço no qual possamos exercer aquilo que mais gostamos e
                   ajudar crianças e famílias que necessitem de apoio na valência
-                  de Terapia da Fala para o seu bom desenvolvimento! ento.
+                  de Terapia da Fala para o seu bom desenvolvimento!
                 </p>
                 <p className="textAboutMe">
                   No nosso gabinete, priorizamos o atendimento pediátrico e

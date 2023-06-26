@@ -7,7 +7,7 @@ const people = [
     name: 'Débora Brochado',
     role: 'Terapeuta da Fala',
     imageUrl: debora,
-    bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019! O meu percurso académico passou pela Escola Superior de Saúde do Instituto Politécnico do Porto e ao longo destes anos, fui adquirindo experiência na intervenção de questões relacionadas às Perturbações da Comunicação, Linguagem e Fala, bem como no acompanhamento de crianças com Necessidades Educativas Especiais.  Sou também especializada em Perturbações da Comunicação, Relação e Autismo, uma das áreas que mais me desperta interesse e que mais gosto de explorar. Através do Gabinete DI, espero conseguir ajudar o máximo de famílias possível e que este projeto se torne uma referência e seja reconhecido pelo profissionalismo, responsabilidade e respeito por todos os que nos procuram que nos é característico!',
+    bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019! O meu percurso académico passou pela Escola Superior de Saúde do Instituto Politécnico do Porto e ao longo destes anos, fui adquirindo experiência na intervenção de questões relacionadas às Perturbações da Comunicação, Linguagem e Fala, bem como no acompanhamento de crianças com Necessidades Educativas Especiais.  Sou também especializada em Perturbações da Comunicação, Relação e Autismo, uma das áreas que mais me desperta interesse e que mais gosto de explorar. Através do Gabinete DI, espero conseguir ajudar o máximo de famílias possível e que este projeto se torne uma referência e seja reconhecido pelo profissionalismo, responsabilidade e respeito por todos os que nos procuram, sendo algo que nos é característico.',
     twitterUrl: 'https://www.instagram.com/tfdeborabrochado/',
   },
   {

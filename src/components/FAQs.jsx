@@ -50,9 +50,9 @@ export default function FAQs() {
               href="#contacts"
               className="primaryColor text-bold font-semibold hover:text-rose-100"
             >
-              através do formulário de contacto,
+              através do formulário de contacto
             </a>{' '}
-            que entraremos em contacto consigo com a maior brevidade.
+            e entraremos em contacto consigo com a maior brevidade.
           </p>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (
