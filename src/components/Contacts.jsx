@@ -46,7 +46,7 @@ export function Contacts() {
           </h2>
 
           <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Se tiver alguma dúvida ou quiser marcar um rastreio gratuito utilize o formulário abaixo. Responderemos com a maior brevidade!”
+            Se tiver alguma dúvida ou quiser marcar um rastreio gratuito utilize o formulário abaixo. Responderemos com a maior brevidade!
           </p>
         </div>
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

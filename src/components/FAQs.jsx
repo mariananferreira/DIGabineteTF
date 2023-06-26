@@ -53,7 +53,7 @@ export default function FAQs() {
               através do formulário de contacto
             </a>{' '}
             e entraremos em contacto consigo com a maior brevidade.
-          </p>
+            </p>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
