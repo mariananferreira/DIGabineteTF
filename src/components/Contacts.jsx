@@ -22,10 +22,10 @@ export function Contacts() {
 
     emailjs
       .sendForm(
-        'service_xbstqxs',
-        'template_kf1umh6',
+        'service_yv1x1pd',
+        'template_0yxclri',
         form.current,
-        'SlgE9reC5vzK-He3e'
+        '8qY6HCFSONqoQZK3s'
       )
       .then(
         (result) => {
@@ -269,7 +269,7 @@ export function Contacts() {
                     <div className="mt-1">
                       <input
                         type="text"
-                        name="from_name"
+                        name="reply_to"
                         id="first-name"
                         autoComplete="given-name"
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
