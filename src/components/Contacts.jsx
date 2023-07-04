@@ -1,42 +1,65 @@
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import { Container } from '@/components/Container'
 import SM from '@/images/espaco.jpeg'
 
 export function Contacts() {
-  const [status, setStatus] = useState(" ");
+  //const [status, setStatus] = useState(" ");
+  const [formData, setFormData] = useState({
+    from_name: '',
+    reply_to: '',
+    subject: '',
+    message: '',
+  })
 
-  const showToastMessage = () => {
-    toast.success('E-mail enviado com sucesso!', {
-        position: toast.POSITION.TOP_CENTER
-    });
-  }; 
-  const form = useRef()
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prevData) => ({ ...prevData, [name]: value }))
+  }
 
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
+
+    const { from_name, reply_to, subject, message } = formData
+    if (
+      from_name.trim() === '' ||
+      reply_to.trim() === '' ||
+      subject.trim() === '' ||
+      message.trim() === ''
+    ) {
+      toast.error('Por favor, preencha todos os campos')
+      return
+    }
 
     emailjs
       .sendForm(
         'service_yv1x1pd',
         'template_0yxclri',
-        form.current,
+        e.target,
         '8qY6HCFSONqoQZK3s'
       )
       .then(
         (result) => {
           console.log(result.text)
+          toast.success('Email enviado com sucesso!')
         },
         (error) => {
           console.log(error.text)
+          toast.error('Erro ao enviar o email. Por favor, tente novamente.')
         }
       )
-  }
 
+    setFormData({
+      from_name: '',
+      reply_to: '',
+      subject: '',
+      message: '',
+    })
+  }
   return (
     <section id="contacts" aria-label="" className="py-10 sm:py-40">
       <Container>
@@ -46,7 +69,8 @@ export function Contacts() {
           </h2>
 
           <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Se tiver alguma dúvida ou quiser marcar um rastreio gratuito utilize o formulário abaixo. Responderemos com a maior brevidade!
+            Se tiver alguma dúvida ou quiser marcar um rastreio gratuito utilize
+            o formulário abaixo. Responderemos com a maior brevidade!
           </p>
         </div>
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -150,7 +174,8 @@ export function Contacts() {
                   </svg>
                 </div>
                 <h3 className="text-center text-lg text-white sm:text-2xl">
-                  Contacte-nos por via telefónica, através do 933 281 493, ou pelas redes sociais
+                  Contacte-nos por via telefónica, através do 933 281 493, ou
+                  pelas redes sociais
                 </h3>
                 <div className="socialMedia sm:col-span-2 sm:flex">
                   <ul role="list" className="socialMedia mt-8 flex space-x-12">
@@ -236,8 +261,7 @@ export function Contacts() {
 
               <div className="px-6 py-10 sm:px-10 lg:col-span-2 xl:p-12">
                 <form
-                  ref={form}
-                  onSubmit={sendEmail}
+                  onSubmit={handleSubmit}
                   action="#"
                   method="POST"
                   className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
@@ -253,10 +277,12 @@ export function Contacts() {
                       <input
                         type="text"
                         name="from_name"
-                        id="first-name"
+                        id="from_name"
                         required
                         autoComplete="given-name"
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        value={formData.from_name}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -269,12 +295,14 @@ export function Contacts() {
                     </label>
                     <div className="mt-1">
                       <input
-                        type="text"
+                        type="email"
                         name="reply_to"
-                        id="first-name"
+                        id="email"
                         required
-                        autoComplete="given-name"
+                        autoComplete="email"
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        value={formData.reply_to}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -292,6 +320,8 @@ export function Contacts() {
                         id="subject"
                         required
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                        value={formData.subject}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -315,13 +345,13 @@ export function Contacts() {
                         required
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                         aria-describedby="message-max"
-                        defaultValue={''}
+                        value={formData.message}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
                     <button
-                      onClick={showToastMessage}
                       type="submit"
                       className="secondary mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent px-6 py-3 text-base font-medium  shadow-sm hover:bg-rose-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
                     >
