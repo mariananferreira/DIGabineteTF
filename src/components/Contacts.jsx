@@ -254,6 +254,7 @@ export function Contacts() {
                         type="text"
                         name="from_name"
                         id="first-name"
+                        required
                         autoComplete="given-name"
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       />
@@ -271,6 +272,7 @@ export function Contacts() {
                         type="text"
                         name="reply_to"
                         id="first-name"
+                        required
                         autoComplete="given-name"
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       />
@@ -288,6 +290,7 @@ export function Contacts() {
                         type="text"
                         name="subject"
                         id="subject"
+                        required
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                       />
                     </div>
@@ -309,6 +312,7 @@ export function Contacts() {
                         id="message"
                         name="message"
                         rows={4}
+                        required
                         className="block w-full rounded-md border-gray-300 px-4 py-3 text-gray-900 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                         aria-describedby="message-max"
                         defaultValue={''}
