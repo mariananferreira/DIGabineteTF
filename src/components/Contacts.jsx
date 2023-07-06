@@ -8,7 +8,6 @@ import { Container } from '@/components/Container'
 import SM from '@/images/espaco.jpeg'
 
 export function Contacts() {
-  //const [status, setStatus] = useState(" ");
   const [formData, setFormData] = useState({
     from_name: '',
     reply_to: '',
