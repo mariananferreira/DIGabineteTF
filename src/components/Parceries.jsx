@@ -2,6 +2,10 @@ import Image from 'next/image'
 import morangos from '@/images/mor.jpeg'
 import ideia from '@/images/ideia.jpeg'
 import seb from '@/images/seb.jpeg'
+import seb1 from '@/images/parceria.jpeg'
+import seb2 from '@/images/parceria1.jpeg'
+import seb3 from '@/images/parceria2.jpeg'
+
 
 export default function Parceries() {
   return (
@@ -39,6 +43,27 @@ export default function Parceries() {
               alt=""
               width={180}
               height={50}
+            />
+            <Image
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
+              src={seb1}
+              alt=""
+              width={180}
+              height={50}
+            />
+            <Image
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
+              src={seb2}
+              alt=""
+              width={180}
+              height={40}
+            />
+            <Image
+              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
+              src={seb3}
+              alt=""
+              width={160}
+              height={40}
             />
           </div>
         </div>
