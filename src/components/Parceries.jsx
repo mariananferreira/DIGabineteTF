@@ -1,11 +1,48 @@
 import Image from 'next/image'
 import morangos from '@/images/mor.jpeg'
-import ideia from '@/images/ideia.jpeg'
-import seb from '@/images/seb.jpeg'
 import seb1 from '@/images/parceria.jpeg'
 import seb2 from '@/images/parceria1.jpeg'
 import seb3 from '@/images/parceria2.jpeg'
+import seb4 from '@/images/parceria4.png'
 
+const people = [
+  {
+    name: 'Centro de Estudos – 3 Ponto 14',
+    role: 'Rio Tinto',
+    imageUrl: seb1,
+    bio: 'Todos os nossos clientes podem usufruir de 10% de desconto em todos os seus serviços. Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
+    url: 'https://3ponto14.com',
+  },
+  {
+    name: 'Crescer a Brincar (Jardim / Creche)',
+    role: 'Polo I – Fânzeres',
+    imageUrl: seb2,
+    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10‰ de desconto em consultas de Terapia da Fala unitárias.',
+    url:'http://www.crescerabrincar.pt '
+  },
+  {
+    name: 'Centro de Estudos – Morangos',
+    role: 'Baguim do Monte',
+    imageUrl: morangos,
+    bio: 'Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
+    url:'https://www.instagram.com/morangos_baguimdomonte/'
+  },
+  {
+    name: 'Centro Médico de Soutelo - Medicina dentária',
+    role: 'Rio Tinto',
+    imageUrl: seb3,
+    bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro.',
+    url:'ttps://www.centromedicodesoutelo.com'
+  },
+  {
+    name: 'Dr. Claúdio Alferes – Médico Dentista CP: 13295',
+    role: 'Baguim do Monte',
+    imageUrl: seb4,
+    bio: '- Avaliação Ortodôntica Gratuita no nosso espaço, por marcação. - Caso haja necessidade de correção Ortodôntica, o acompanhamento será realizado numa clínica dentária em Baguim do Monte.',
+    url:'https://www.instagram.com/dr.claudioalferes/'
+  },
+  // More people...
+]
 
 export default function Parceries() {
   return (
@@ -18,54 +55,37 @@ export default function Parceries() {
           <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
             O progresso é um caminho que não se traça sozinho e é com grande
             satisfação que temos o privilégio de colaborar com algumas
-            instituições! Todos os alunos provenientes das parcerias
-            estabelecidas com o Gabinete DI poderão usufruir de um desconto de
-            10% em consultas unitárias em todo o processo de intervenção.
+            instituições!
           </p>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={morangos}
-              alt=""
-              width={180}
-              height={50}
-            />
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={ideia}
-              alt=""
-              width={180}
-              height={50}
-            />
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={seb}
-              alt=""
-              width={180}
-              height={50}
-            />
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={seb1}
-              alt=""
-              width={180}
-              height={50}
-            />
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={seb2}
-              alt=""
-              width={180}
-              height={40}
-            />
-            <Image
-              className="col-span-2 max-h-40 w-full object-contain lg:col-span-1"
-              src={seb3}
-              alt=""
-              width={160}
-              height={40}
-            />
-          </div>
+          <ul
+            role="list"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+          >
+            {people.map((person) => (
+              <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
+                <Image
+                  className="aspect-[4/5] w-52 flex-none rounded-2xl object-contain"
+                  src={person.imageUrl}
+                  alt=""
+                  priority
+                />
+                <div className="flex-auto">
+                  <a href={person.url} target="_blank" rel="noopener noreferrer">
+                    <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                      {person.name}
+                    </h3>
+                  </a>
+
+                  <p className="text-base leading-7 text-gray-600">
+                    {person.role}
+                  </p>
+                  <p className="mt-6 text-base leading-7 text-gray-600">
+                    {person.bio}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
