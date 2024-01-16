@@ -17,7 +17,7 @@ const people = [
     name: 'Crescer a Brincar (Jardim / Creche)',
     role: 'Polo I – Fânzeres',
     imageUrl: seb2,
-    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10‰ de desconto em consultas de Terapia da Fala unitárias.',
+    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
     url:'http://www.crescerabrincar.pt '
   },
   {
