@@ -21,7 +21,7 @@ const people = [
   },
   {
     name: 'Marlene Ferreira',
-    role: 'Terapeuta da Fala',
+    role: 'Psicóloga Clínica',
     imageUrl: marlene,
     bio: 'Olá, eu sou a Marlene e sou Psicóloga Clínica e da Saúde desde 2017. Formei-me na Universidade Fernando Pessoa, sediada no Porto.Ao longo do meu percurso investi em várias especializações, que me permitem trabalhar com crianças, adolescentes e adultos nas mais diversas problemáticas, desde emocionais, comportamentais e cognitivas. Sou especialista em Avaliação e Intervenção Cognitivo – Comportamental e Avaliação e Intervenção de Perturbações do Neurodesenvolvimento da Infância à Idade Adulta, pelo CRIAP. Mais tarde, investi ainda em Avaliação e Intervenção em Perturbações do Comportamento Alimentar pelo INSPSI. O Gabinete DI é para mim um espaço harmonioso e que me permite um grande crescimento e envolvimento pessoal e profissional. Defino-me como uma profissional íntegra, dedicada e com vontade de aprender sempre um bocadinho mais com o outro!',
 
