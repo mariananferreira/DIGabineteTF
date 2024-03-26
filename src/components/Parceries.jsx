@@ -4,6 +4,8 @@ import seb1 from '@/images/parceria.jpeg'
 import seb2 from '@/images/parceria1.jpeg'
 import seb3 from '@/images/parceria2.jpeg'
 import seb4 from '@/images/parceria4.png'
+import colegio from '@/images/transferir.png'
+
 
 const people = [
   {
@@ -40,6 +42,13 @@ const people = [
     imageUrl: seb4,
     bio: '- Avaliação Ortodôntica Gratuita no nosso espaço, por marcação. - Caso haja necessidade de correção Ortodôntica, o acompanhamento será realizado numa clínica dentária em Baguim do Monte.',
     url:'https://www.instagram.com/dr.claudioalferes/'
+  },
+  {
+    name: 'Externato Santa Margarida',
+    role: 'Gondomar',
+    imageUrl: colegio,
+    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
+    url:'https://externatosantamargarida.pt/'
   },
   // More people...
 ]
