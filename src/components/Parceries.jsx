@@ -19,7 +19,7 @@ const people = [
     name: 'Crescer a Brincar (Jardim / Creche)',
     role: 'Polo I – Fânzeres',
     imageUrl: seb2,
-    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
+    bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
     url:'http://www.crescerabrincar.pt '
   },
   {
@@ -40,14 +40,14 @@ const people = [
     name: 'Dr. Claúdio Alferes – Médico Dentista CP: 13295',
     role: 'Baguim do Monte',
     imageUrl: seb4,
-    bio: '- Avaliação Ortodôntica Gratuita no nosso espaço, por marcação. - Caso haja necessidade de correção Ortodôntica, o acompanhamento será realizado numa clínica dentária em Baguim do Monte.',
+    bio: 'Avaliação Ortodôntica Gratuita no nosso espaço, por marcação. Caso haja necessidade de correção Ortodôntica, o acompanhamento será realizado numa clínica dentária em Baguim do Monte.',
     url:'https://www.instagram.com/dr.claudioalferes/'
   },
   {
     name: 'Externato Santa Margarida',
     role: 'Gondomar',
     imageUrl: colegio,
-    bio: '- O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
+    bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro.',
     url:'https://externatosantamargarida.pt/'
   },
   // More people...

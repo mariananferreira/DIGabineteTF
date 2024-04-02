@@ -254,14 +254,8 @@ export function Contacts() {
                     4435-606, Baguim do Monte
                     <br />
                     <br />
-                    Horário:
-                    <br />
-                    Segunda 9h - 12h<br />
-                    Terça 9h - 12h<br />
-                    Quarta 9h - 12h<br />
-                    Quinta 9h - 12h/ 14h - 19h<br />
-                    Sexta 9h - 12h/ 14h - 19h<br />
-                    Sábado 9h - 12h/ 14h - 18h{' '}
+                    Aberto de Terça a Sábado
+
                   </p>
                 </div>
               </div>

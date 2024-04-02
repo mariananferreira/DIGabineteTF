@@ -15,7 +15,7 @@ const faqs = [
   {
     question: 'O vosso Gabinete trabalha com a Segurança Social?',
     answer:
-      'Sim, o nosso gabinete auxilia os pais no processo de submissão dos documentos necessários para o Subsídio de Educação Especial, no entanto, os mesmos terão de realizar o pagamento das consultas a privado durante o período de aceitação do subsídio. Assim que o apoio for dispensado, a criança poderá usufruir das consultas comparticipadas.',
+      'Não, o nosso gabinete não auxilia no processo de colocação do subsídio de educação especial e/ou bonificação.',
   },
   {
     question: 'O Gabinete DI tem acordo com algum seguro ou ADSE?',
