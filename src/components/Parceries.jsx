@@ -37,13 +37,6 @@ const people = [
     url:'ttps://www.centromedicodesoutelo.com'
   },
   {
-    name: 'Dr. Claúdio Alferes – Médico Dentista CP: 13295',
-    role: 'Baguim do Monte',
-    imageUrl: seb4,
-    bio: 'Avaliação Ortodôntica Gratuita no nosso espaço, por marcação. Caso haja necessidade de correção Ortodôntica, o acompanhamento será realizado numa clínica dentária em Baguim do Monte.',
-    url:'https://www.instagram.com/dr.claudioalferes/'
-  },
-  {
     name: 'Externato Santa Margarida',
     role: 'Gondomar',
     imageUrl: colegio,

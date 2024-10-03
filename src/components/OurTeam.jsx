@@ -19,13 +19,7 @@ const people = [
     bio: 'Olá, eu sou a Inês e sou Terapeuta da fala desde 2019. Formei-me na Escola Superior de Saúde do Instituto Politécnico do Porto (ESS). Neste meu percurso especializei-me na área Pediátrica e é nesta área que me sinto mais feliz e completa. Sou especialista em Perturbações da Comunicação, Linguagem e Fala, pela CRIAP e em Perturbações da comunicação, Relação e Autismo, pela SeedGo. Realizo intervenção com crianças e com estas diversas perturbações desde que terminei a licenciatura. O Gabinete DI é para mim, ao nível pessoal e profissional, um grande desafio. Poderão sempre contar com a minha sinceridade, dedicação e profissionalismo. Espero que o nosso projeto auxilie muitas famílias e crianças nesta viagem que é a Terapia da Fala.',
     twitterUrl: 'https://www.instagram.com/tfinesleite/',
   },
-  {
-    name: 'Marlene Ferreira',
-    role: 'Psicóloga Clínica',
-    imageUrl: marlene,
-    bio: 'Olá, eu sou a Marlene e sou Psicóloga Clínica e da Saúde desde 2017. Formei-me na Universidade Fernando Pessoa, sediada no Porto.Ao longo do meu percurso investi em várias especializações, que me permitem trabalhar com crianças, adolescentes e adultos nas mais diversas problemáticas, desde emocionais, comportamentais e cognitivas. Sou especialista em Avaliação e Intervenção Cognitivo – Comportamental e Avaliação e Intervenção de Perturbações do Neurodesenvolvimento da Infância à Idade Adulta, pelo CRIAP. Mais tarde, investi ainda em Avaliação e Intervenção em Perturbações do Comportamento Alimentar pelo INSPSI. O Gabinete DI é para mim um espaço harmonioso e que me permite um grande crescimento e envolvimento pessoal e profissional. Defino-me como uma profissional íntegra, dedicada e com vontade de aprender sempre um bocadinho mais com o outro!',
-
-  },
+  
 ]
 
 export default function OurTeam() {

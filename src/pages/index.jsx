@@ -27,7 +27,6 @@ export default function Home() {
         <OurTeam />
         <OurSpace />
         <Parceries />
-        <CallToAction />
         <Contacts />
         <FAQs />
       </main>
