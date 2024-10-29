@@ -21,7 +21,6 @@ const people = [
   },
   
 ]
-
 export default function OurTeam() {
   return (
     <section id="ourteam" aria-label="our team">
