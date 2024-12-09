@@ -9,10 +9,9 @@ export default function Intro() {
     <section id="intro" aria-label="">
       <Container>
         <div className="py-6">
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-24 lg:px-8">
             <div className="mb-12 mt-12 max-w-2xl md:mx-auto md:text-center xl:max-w-none">
               <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
-
               <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
                 Cada <span className="titleWord ">palavra</span> é um passo para
                 o futuro!

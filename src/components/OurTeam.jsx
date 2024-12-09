@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import ines from '@/images/deb1.png'
-import debora from '@/images/ines.jpeg'
+import debora from '@/images/deb1.png'
+import ines from '@/images/ines.jpeg'
 import nadia from '@/images/nadia.png'
 
 const people = [
