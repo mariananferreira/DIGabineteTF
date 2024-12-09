@@ -34,6 +34,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/psinadia.js"
+    ],
+    "/terdeb": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/terdeb.js"
     ]
   },
   "ampFirstPages": []

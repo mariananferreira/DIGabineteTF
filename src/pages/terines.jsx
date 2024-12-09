@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import ines from '@/images/ines1.JPEG'
+import ines from '@/images/deb1.png'
 import Link from 'next/link'
 
 export default function TerDeb() {

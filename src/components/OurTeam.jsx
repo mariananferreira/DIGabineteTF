@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ines from '@/images/ines1.JPEG'
+import ines from '@/images/deb1.png'
 import debora from '@/images/deb1.png'
 import nadia from '@/images/nadia.png'
 
