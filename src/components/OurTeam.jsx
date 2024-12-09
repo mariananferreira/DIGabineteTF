@@ -1,69 +1,71 @@
 import Image from 'next/image'
-import ines from '@/images/inestf.jpeg'
-import debora from '@/images/debtf.jpeg'
-import marlene from '@/images/marl.jpeg'
-
+import ines from '@/images/ines1.JPEG'
+import debora from '@/images/deb1.png'
+import nadia from '@/images/nadia.png'
 
 const people = [
   {
-    name: 'Débora Brochado',
+    name: 'Dra. Débora Brochado',
     role: 'Terapeuta da Fala',
     imageUrl: debora,
-    bio: 'Olá, eu sou a Débora e sou Terapeuta da Fala desde 2019! O meu percurso académico passou pela Escola Superior de Saúde do Instituto Politécnico do Porto e ao longo destes anos, fui adquirindo experiência na intervenção de questões relacionadas às Perturbações da Comunicação, Linguagem e Fala, bem como no acompanhamento de crianças com Necessidades Educativas Especiais.  Sou também especializada em Perturbações da Comunicação, Relação e Autismo, uma das áreas que mais me desperta interesse e que mais gosto de explorar. Através do Gabinete DI, espero conseguir ajudar o máximo de famílias possível e que este projeto se torne uma referência e seja reconhecido pelo profissionalismo, responsabilidade e respeito por todos os que nos procuram, sendo algo que nos é característico.',
-    twitterUrl: 'https://www.instagram.com/tfdeborabrochado/',
+    linkedinUrl: 'https://www.instagram.com/tfdeborabrochado/',
+    url: '/terdeb',
   },
   {
-    name: 'Inês leite',
+    name: 'Dra. Inês Leite',
     role: 'Terapeuta da Fala',
     imageUrl: ines,
-    bio: 'Olá, eu sou a Inês e sou Terapeuta da fala desde 2019. Formei-me na Escola Superior de Saúde do Instituto Politécnico do Porto (ESS). Neste meu percurso especializei-me na área Pediátrica e é nesta área que me sinto mais feliz e completa. Sou especialista em Perturbações da Comunicação, Linguagem e Fala, pela CRIAP e em Perturbações da comunicação, Relação e Autismo, pela SeedGo. Realizo intervenção com crianças e com estas diversas perturbações desde que terminei a licenciatura. O Gabinete DI é para mim, ao nível pessoal e profissional, um grande desafio. Poderão sempre contar com a minha sinceridade, dedicação e profissionalismo. Espero que o nosso projeto auxilie muitas famílias e crianças nesta viagem que é a Terapia da Fala.',
-    twitterUrl: 'https://www.instagram.com/tfinesleite/',
+    linkedinUrl: 'https://www.instagram.com/tfinesleite/',
+    url: '/terines',
   },
-  
+  {
+    name: 'Dra. Nádia Teixeira',
+    role: 'Psocóloga Clínica',
+    imageUrl: nadia,
+    linkedinUrl: '#deb',
+    url: '/psinadia',
+  },
+  // More people...
 ]
+
 export default function OurTeam() {
   return (
-    <section id="ourteam" aria-label="our team">
-      <div className="py-24 md:py-32 lg:py-20">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="primaryColor text-3xl font-bold tracking-tight sm:text-4xl">
-              Corpo técnico
+    <section id="ourteam" aria-label="ourteam">
+      <div className="py-16">
+        <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+          <div className="mb-12 mt-12 max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+            <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
+
+            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
+              Conheça a nossa <span className="titleWord">equipa</span>{' '}
+              especializada!
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Conheça a nossa equipa composta pela Terapeuta Débora e pela Terapeuta Inês.  
-            </p>
           </div>
           <ul
             role="list"
-            className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
           >
             {people.map((person) => (
               <li key={person.name}>
-                <Image
-                  className="aspect-[2/2] w-full rounded-xl object-cover"
-                  src={person.imageUrl}
-                  alt=""
-                  priority
-                />
-                <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">
+                <a href={person.url} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    className="mx-auto h-56 w-56 rounded-full border-4 border-[#e8cfc2] object-fill"
+                    src={person.imageUrl}
+                    alt=""
+                    priority
+                  />{' '}
+                </a>
+                <h3 className="text mt-6 text-base/7 font-semibold tracking-tight">
                   {person.name}
                 </h3>
-                <p className="text-base leading-7 text-gray-600">
-                  {person.role}
-                </p>
-                <p className="mt-4 text-base leading-7 text-gray-600">
-                  {person.bio}
-                </p>
-                <ul role="list" className="mt-6 flex gap-x-6">
+                <p className="text-sm/6 text-gray-600">{person.role}</p>
+                <ul role="list" className="mt-4 flex justify-center gap-x-4">
                   <li>
                     <a
-                      href={person.twitterUrl}
+                      href={person.linkedinUrl}
                       className="text-gray-400 hover:text-gray-500"
-                      target="blank"
-                      rel="noreferrer"
                     >
-                      <span className="sr-only">Instagram</span>
+                      <span className="sr-only">LinkedIn</span>
                       <svg
                         className="h-5 w-5"
                         aria-hidden="true"

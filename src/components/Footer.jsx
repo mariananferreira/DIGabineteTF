@@ -1,14 +1,36 @@
 import Link from 'next/link'
-
+import Image from 'next/image'
 import { Container } from '@/components/Container'
-import { NavLink } from '@/components/NavLink'
+import livro from '@/images/livro.png'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="secondaryBack">
       <Container>
-        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
-          <div className="flex gap-x-6">
+        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row sm:justify-between">
+          {/* Nome da empresa à esquerda */}
+          <p className="text-sm text-slate-500 order-1 sm:order-none sm:mr-auto">
+            Gabinete Terapia da Fala DI
+          </p>
+
+          {/* Livro de Reclamações no centro */}
+          <div className="order-3 sm:order-none sm:flex sm:justify-center sm:mx-auto mt-6 sm:mt-0">
+            <Link
+              href="https://www.livroreclamacoes.pt/"
+              target="blank"
+              rel="noreferrer"
+            >
+              <Image 
+                className="w-24 sm:w-28 lg:w-32" 
+                src={livro} 
+                alt="Livro de Reclamações" 
+                priority 
+              />
+            </Link>
+          </div>
+
+          {/* Redes sociais à direita */}
+          <div className="flex gap-x-6 order-2 sm:order-none sm:ml-auto mt-6 sm:mt-0">
             <Link
               href="https://www.linkedin.com/company/gabinete-terapia-da-fala-di/?originalSubdomain=pt"
               target="blank"
@@ -52,11 +74,9 @@ export function Footer() {
               </svg>
             </Link>
           </div>
-          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            DI, Gabinete Terapia da Fala
-          </p>
         </div>
       </Container>
     </footer>
   )
 }
+

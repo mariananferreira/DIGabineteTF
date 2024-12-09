@@ -1,26 +1,71 @@
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-import Image from 'next/image'
-import logo from '@/images/logo3.png'
-
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
+import { ClockIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 
-function MobileNavLink({ href, children }) {
+// Componente para o TopBar
+function TopBar() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = () => {
+    setIsVisible(window.scrollY === 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <Popover.Button as={Link} href={href} className="block w-full p-2">
+    <div
+      className={`fixed left-0 right-0 top-0 z-50 bg-[#e8cfc2] px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      } hidden sm:flex`}
+    >
+      <div className="mx-auto flex w-full max-w-screen-xl items-center justify-end">
+        {/* Horário com ícone de relógio */}
+        <div className="flex items-center space-x-2">
+          <ClockIcon className="h-5 w-5 text-slate-700" />
+          <span>De terça a sábado</span>
+        </div>
+        {/* Espaçamento entre os itens */}
+        <div className="w-4"></div>
+        {/* Email com ícone de envelope */}
+        <div className="flex items-center space-x-2">
+          <EnvelopeIcon className="h-5 w-5 text-slate-700" />
+          <a href="mailto:geralgabinetetf.di@gmail.com" className="hover:underline">
+            geralgabinetetf.di@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+// Componente para Navegação Mobile
+function MobileNavLink({ href, children }) {
+  const basePath = "/"; // Substitua pelo caminho base do seu projeto, se necessário
+  return (
+    <Link
+      href={`${basePath}${href}`}
+      className="block w-full rounded-md p-2 text-center hover:bg-rose-200"
+    >
       {children}
-    </Popover.Button>
+    </Link>
   )
 }
+
 
 function MobileNavIcon({ open }) {
   return (
     <svg
       aria-hidden="true"
-      className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+      className="h-6 w-6 overflow-visible stroke-white"
       fill="none"
       strokeWidth={2}
       strokeLinecap="round"
@@ -46,76 +91,113 @@ function MobileNavIcon({ open }) {
 function MobileNavigation() {
   return (
     <Popover>
-      <Popover.Button
-        className="relative z-10 flex h-8 w-8 items-center justify-center [&:not(:focus-visible)]:focus:outline-none"
-        aria-label="Toggle Navigation"
-      >
-        {({ open }) => <MobileNavIcon open={open} />}
-      </Popover.Button>
-      <Transition.Root>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="duration-150 ease-in"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <Popover.Overlay className="primaryBack fixed inset-0 " />
-        </Transition.Child>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
-          enterFrom="opacity-0 scale-95"
-          enterTo="opacity-100 scale-100"
-          leave="duration-100 ease-in"
-          leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95"
-        >
-          <Popover.Panel
-            as="div"
-            className="navBarColor absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
+      {({ open }) => (
+        <>
+          <Popover.Button
+            className="relative z-10 flex h-8 w-8 items-center justify-center focus:outline-none"
+            aria-label="Toggle Navigation"
           >
-            <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
-            <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
-            <MobileNavLink href="#ourspace">O nosso espaço</MobileNavLink>
-            <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
-            <MobileNavLink href="#contacts">Contactos</MobileNavLink>
-            <MobileNavLink href="#faqs">Perguntas frequentes</MobileNavLink>
-          </Popover.Panel>
-        </Transition.Child>
-      </Transition.Root>
+            <MobileNavIcon open={open} />
+          </Popover.Button>
+          <Transition.Root>
+            <Transition.Child
+              as={Fragment}
+              enter="duration-150 ease-out"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="duration-150 ease-in"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Popover.Overlay className="fixed inset-0 bg-black/30" />
+            </Transition.Child>
+            <Transition.Child
+              as={Fragment}
+              enter="duration-150 ease-out"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="duration-100 ease-in"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <Popover.Panel
+                as="div"
+                className="absolute inset-x-4 top-full mt-4 flex flex-col space-y-4 rounded-lg bg-white p-4 text-lg shadow-lg ring-1 ring-black/5"
+              >
+                <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
+                <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
+                <MobileNavLink href="#ourspace">O nosso espaço</MobileNavLink>
+                <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
+                <MobileNavLink href="#contacts">Contactos</MobileNavLink>
+                <MobileNavLink href="#faqs">Perguntas frequentes</MobileNavLink>
+              </Popover.Panel>
+            </Transition.Child>
+          </Transition.Root>
+        </>
+      )}
     </Popover>
   )
 }
 
+// Cabeçalho Principal
 export function Header() {
+  const [isMobile, setIsMobile] = useState(false)
+  const [isTopBarVisible, setIsTopBarVisible] = useState(true)  // Estado para controlar a visibilidade da TopBar
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640)
+    }
+
+    const handleScroll = () => {
+      setIsTopBarVisible(window.scrollY === 0)  // Atualiza o estado conforme o scroll
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <header
-      className="navBarColor fixed top-0 z-50 flex w-full flex-wrap items-center justify-between px-4 font-bold shadow-md shadow-slate-900/5 transition duration-500 sm:px-6  lg:px-8 
-    "
-    >
-      <div className="mr-6 flex lg:hidden">
-        <MobileNavigation />
-      </div>
-      <Container>
-        <nav className="relative z-50 flex justify-between">
-          <div className="hidden space-x-4 sm:ml-6 lg:block">
-            <div className="relative flex flex-grow basis-0 items-center">
-              <Link href="#" aria-label="Home">
-                <Image className="logoSizeNavbar" src={logo} alt="nut" priority />
-              </Link>
+    <>
+      {/** Exibir a barra superior somente em telas maiores que mobile */}
+      {!isMobile && <TopBar />}
+      <header
+        className={clsx(
+          "fixed z-40 w-full bg-[#e8cfc2] px-4 py-4 font-bold shadow-md sm:px-6 lg:px-8 transition-all duration-300",
+          {
+            "top-0": isMobile || !isTopBarVisible, // Em mobile ou se a barra superior sumir
+            "top-[40px]": !isMobile && isTopBarVisible, // Em telas grandes com a barra visível
+          }
+        )}
+      >
+        <Container>
+          <div className="flex items-center justify-between">
+            <Link href="/" aria-label="Home">
+              <p>Gabinete Terapia da Fala DI</p>
+            </Link>
+            <div className="lg:hidden">
+              <MobileNavigation />
+            </div>
+            <nav className="hidden space-x-6 lg:flex">
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
               <NavLink href="#ourspace">O nosso espaço</NavLink>
               <NavLink href="#parceries">Parcerias</NavLink>
               <NavLink href="#contacts">Contactos</NavLink>
-              <NavLink href="#faqs">Perguntas frequentes</NavLink>   
-            </div>
+              <NavLink href="#faqs">Perguntas frequentes</NavLink>
+            </nav>
           </div>
-        </nav>
-      </Container>
-    </header>
+        </Container>
+      </header>
+    </>
   )
 }
+
+
+

@@ -15,7 +15,7 @@ const faqs = [
   {
     question: 'O vosso Gabinete trabalha com a Segurança Social?',
     answer:
-      'Não, o nosso gabinete não auxilia no processo de colocação do subsídio de educação especial e/ou bonificação.',
+      'Não, o nosso gabinete não auxilia no processo de colocação do subsídio de educação especial e/ou bonificação. Contudo fornecemos a documentação necessária para que as famílias o possam fazer.',
   },
   {
     question: 'O Gabinete DI tem acordo com algum seguro ou ADSE?',
@@ -39,56 +39,61 @@ const faqs = [
 export default function FAQs() {
   return (
     <section id="faqs" aria-label="frequent questions">
-      <div className="sm:py-25 pb-10 mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="max-w-2xl md:text-center xl:max-w-none">
-          <h2 className="primaryColor sectionTitles text-3xl font-bold tracking-tight sm:text-4xl">
-            Perguntas Frequentes
-          </h2>
-          <p className="sectionTitles mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
-            <a
-              href="#contacts"
-              className="primaryColor text-bold font-semibold hover:text-rose-100"
-            >
-              através do formulário de contacto
-            </a>{' '}
-            e entraremos em contacto consigo com a maior brevidade.
+      <div className=" py-16">
+        <div className="sm:py-25 mx-auto max-w-7xl px-6 pb-10 lg:px-8">
+          <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+            <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
+
+            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
+              Perguntas <span className="titleWord">comuns</span> respostas
+              simples
+            </h2>
+            <p className=" text mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+              Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
+              <a
+                href="#contacts"
+                className="primaryColor text-bold font-semibold hover:text-rose-100"
+              >
+                através do formulário de contacto
+              </a>{' '}
+              e entraremos em contacto consigo com a maior brevidade.
             </p>
-          <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
-            {faqs.map((faq) => (
-              <Disclosure as="div" key={faq.question} className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
-                        <span className="text-base font-semibold leading-7">
-                          {faq.question}
-                        </span>
-                        <span className="ml-6 flex h-7 items-center">
-                          {open ? (
-                            <MinusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
-                          ) : (
-                            <PlusSmallIcon
-                              className="h-6 w-6"
-                              aria-hidden="true"
-                            />
-                          )}
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-justify text-base leading-7 text-gray-600">
-                        {faq.answer}
-                      </p>
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
-            ))}
-          </dl>
+            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+              {faqs.map((faq) => (
+                <Disclosure as="div" key={faq.question} className="pt-6">
+                  {({ open }) => (
+                    <>
+                      <dt>
+                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                          <span className="text-base font-semibold leading-7">
+                            {faq.question}
+                          </span>
+                          <span className="ml-6 flex h-7 items-center">
+                            {open ? (
+                              <MinusSmallIcon
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
+                            ) : (
+                              <PlusSmallIcon
+                                className="h-6 w-6"
+                                aria-hidden="true"
+                              />
+                            )}
+                          </span>
+                        </Disclosure.Button>
+                      </dt>
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                        <p className="text-justify text-base leading-7 text-gray-600">
+                          {faq.answer}
+                        </p>
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
+              ))}
+            </dl>
+          </div>
         </div>
       </div>
     </section>

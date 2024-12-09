@@ -1,10 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 #__next {
   min-height: 100%;
 }
+
+@font-face {
+  font-family: 'ParisScript';
+  src: url('../assets/fonts/signa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ParisScript2';
+  src: url('../assets/fonts/Parisienne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 .name {
   color: #e8cfc2;
@@ -19,7 +35,7 @@
   margin-top: 30px;
   text-indent: 30px;
   line-height: 1.9rem;
-}
+} 
 .logoSizeNavbar{
   width: 10rem;
 }
@@ -49,6 +65,24 @@
   padding-bottom: 3%;
 }
 
+.titleWord {
+  color: #b98b74;
+  font-weight: bold;
+  font-family: 'ParisScript', sans-serif;
+  font-size: 1.5rem;
+
+}
+
+.sectionTitles {
+  text-align: center;
+  color:#5b5044;
+  font-family: 'Noto Color Emoji';
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  font-style: normal;
+}
+
 .mobileNumber {
   padding-left: 10px;
 }
@@ -65,8 +99,32 @@
   padding-top: 40px;
 }
 
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.scheduleTable th, .scheduleTable td {
+  border-bottom: 1px solid #000; /* Adiciona um traço abaixo das células */
+  padding: 8px 12px; /* Ajuste de espaçamento para um melhor layout */
+}
+
+.scheduleTable th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.scheduleTable td {
+  font-size: small;
+  text-align: center;
+  font-family: 'Carme', sans-serif;
+}
+
+
 .address {
   font-size: medium;
+  font-family: 'Carme', sans-serif;
 }
 
 .secondary {
@@ -77,7 +135,11 @@
 }
 
 .primaryBack {
-  background-color: #fff;
+  background-color: #fefcf8;
+}
+
+.secondaryBack {
+  background-color: #e8cfc2;
 }
 
 .buttonStyle {
@@ -93,9 +155,7 @@
   margin-top: 5rem;
 }
 
-.sectionTitles {
-  text-align: justify;
-}
+
 
 .secondaryTitles {
   color: #192710;
@@ -107,7 +167,17 @@
 .secondaryText {
   font-size: 1.1rem;
   text-indent: 30px;
+  color:#5b5044;
 }
+
+.text {
+  font-size: 1.1rem;
+  color: #5b5044;
+  max-width: 85%; /* Optional: further controls width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .buttonStyle {
   background-color: #fff;
@@ -131,4 +201,19 @@
   max-width: 600px; /* Adjust the width as needed */
   margin: 0 auto;
   padding-top: 30px;
+}
+/* Adicione este CSS no seu arquivo de estilos */
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem; /* Bordas arredondadas */
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse */
+}
+
+.img-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
