@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import logo from '@/images/logo4.png' // Substitua pelo caminho do seu logo
-
-import hero2 from '@/images/hero2.jpeg' // Imagem para telas grandes (maiores que 1300px)
-import hero3 from '@/images/hero3.jpeg' // Imagem para telas médias (entre 700px e 1300px)
-import hero1 from '@/images/hero1.jpeg' // Imagem para telas pequenas (menores que 700px)
+import hero2 from '@/images/herob.jpeg' // Imagem para telas grandes (maiores que 1300px)
+import hero3 from '@/images/heroc.jpeg' // Imagem para telas médias (entre 700px e 1300px)
+import hero1 from '@/images/heroa.jpeg' // Imagem para telas pequenas (menores que 700px)
 import hero4 from '@/images/hero4.png' // Imagem para telas pequenas (menores que 700px)
 
 
