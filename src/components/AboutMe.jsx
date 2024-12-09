@@ -2,7 +2,7 @@ import { Container } from '@/components/Container'
 
 export function AboutMe() {
   return (
-    <section id="aboutme" aria-label="Sobre nós" className="primaryBack py-16">
+    <section id="aboutme" aria-label="Sobre nós" className="primaryBack py-6">
       <Container className="relative">
         <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />

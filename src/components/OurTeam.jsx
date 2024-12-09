@@ -31,7 +31,7 @@ const people = [
 export default function OurTeam() {
   return (
     <section id="ourteam" aria-label="ourteam">
-      <div className="py-16">
+      <div className="py-6">
         <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
           <div className="mb-12 mt-12 max-w-2xl md:mx-auto md:text-center xl:max-w-none">
             <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />

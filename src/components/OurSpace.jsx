@@ -56,7 +56,7 @@ export default function Photos() {
   return (
     <section id="ourspace" aria-label="our space">
       <Container>
-        <div className="py-16">
+        <div className="py-6">
           <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
             <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
 

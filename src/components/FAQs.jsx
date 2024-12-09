@@ -39,7 +39,7 @@ const faqs = [
 export default function FAQs() {
   return (
     <section id="faqs" aria-label="frequent questions">
-      <div className=" py-16">
+      <div className="py-6">
         <div className="sm:py-25 mx-auto max-w-7xl px-6 pb-10 lg:px-8">
           <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
             <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
