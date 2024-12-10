@@ -6,7 +6,6 @@ import hero3 from '@/images/heroc.jpeg' // Imagem para telas médias (entre 700p
 import hero1 from '@/images/heroa.jpeg' // Imagem para telas pequenas (menores que 700px)
 import hero4 from '@/images/hero4.png' // Imagem para telas pequenas (menores que 700px)
 
-
 export default function Example() {
   // Estado para armazenar a imagem do fundo
   const [backgroundImage, setBackgroundImage] = useState(hero2)
@@ -49,20 +48,24 @@ export default function Example() {
           layout="fill" // O layout "fill" preenche toda a área disponível
         />
       </div>
-      <div aria-hidden="true" className="absolute inset-0 bg-gray-900 bg-opacity-10" />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gray-900 bg-opacity-10"
+      />
 
       {/* Logo - Mover para baixo */}
-      <div className="absolute top-16 right-4 sm:top-16 sm:right-4">
+      {/* Logo - Mover para baixo e ajustar tamanho */}
+      <div className="absolute right-4 top-24 sm:right-8 sm:top-20">
         <Image
           src={logo}
           alt="Logo"
-          className="h-auto w-auto max-w-[100px] sm:max-w-none"
+          className="h-auto w-auto max-w-[80x] sm:max-w-[100px] lg:max-w-[150px]" // Ajuste de tamanho
           priority
         />
       </div>
 
       {/* Conteúdo Principal */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 sm:pt-40 text-white lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 text-white sm:pt-40 lg:px-8">
         <div className="ml-auto max-w-md text-center md:text-right lg:max-w-lg">
           <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
             "Comunicar bem <br /> desde cedo faz <br /> toda a diferença"
@@ -83,5 +86,3 @@ export default function Example() {
     </div>
   )
 }
-
-
