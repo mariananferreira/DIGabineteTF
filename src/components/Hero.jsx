@@ -55,11 +55,11 @@ export default function Example() {
 
       {/* Logo - Mover para baixo */}
       {/* Logo - Mover para baixo e ajustar tamanho */}
-      <div className="absolute right-4 top-24 sm:right-8 sm:top-20">
+      <div className="absolute left-1/2 top-24 -translate-x-1/2 transform sm:left-auto sm:right-8 sm:top-20 sm:translate-x-0">
         <Image
           src={logo}
           alt="Logo"
-          className="h-auto w-auto max-w-[80x] sm:max-w-[100px] lg:max-w-[150px]" // Ajuste de tamanho
+          className="h-auto w-auto max-w-[120px] sm:max-w-[100px] lg:max-w-[150px]" // Aumentando ligeiramente para ecrãs pequenos
           priority
         />
       </div>
