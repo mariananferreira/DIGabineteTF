@@ -20,7 +20,7 @@ const people = [
   },
   {
     name: 'Dra. Nádia Teixeira',
-    role: 'Psocóloga Clínica',
+    role: 'Psicóloga Clínica',
     imageUrl: nadia,
     linkedinUrl: '#deb',
     url: '/psinadia',
