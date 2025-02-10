@@ -18,7 +18,7 @@ export default function PsiNadia() {
             <h1 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
               Dra. Nádia Teixeira
             </h1>
-            <p className="text mt-2 text-lg">Psocóloga clínica</p>
+            <p className="text mt-2 text-lg">Psicóloga clínica</p>
           </section>
           <section className="flex flex-col items-center gap-8 sm:flex-row">
             <div className="flex-shrink-0">
