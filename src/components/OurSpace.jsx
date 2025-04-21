@@ -61,7 +61,7 @@ export default function Photos() {
             <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
 
             <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
-              O nosso <span className="titleWord">gabinete</span> foi pensado ao
+              O nosso <span className="titleWord">centro</span> foi pensado ao
               pormenor para proporcionar conforto e confiança a cada família!
             </h2>
           </div>

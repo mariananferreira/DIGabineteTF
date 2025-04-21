@@ -72,8 +72,8 @@ export function AboutMe() {
                   Quem somos, <br />
                 </h2>
                 <p className="textAboutMe">
-                  O Gabinete DI é um Gabinete de Terapia da Fala, sediado em
-                  Baguim do Monte, Gondomar, que nasceu com um propósito
+                  O Centro Terapêutico DI, sediado em
+                  Rio Tinto, Gondomar, nasceu com um propósito
                   especial. Enquanto amigas e colegas de trabalho, somos duas
                   profissionais que decidiram abraçar uma nova aventura e criar
                   um espaço no qual possamos exercer aquilo que mais gostamos e
@@ -81,7 +81,7 @@ export function AboutMe() {
                   de Terapia da Fala para o seu bom desenvolvimento!
                 </p>
                 <p className="textAboutMe">
-                  No nosso gabinete, priorizamos o atendimento pediátrico e
+                  No nosso centro, priorizamos o atendimento pediátrico e
                   procuramos oferecer um serviço de qualidade excecional,
                   adaptado às necessidades específicas de cada paciente, tendo
                   em consideração a sua individualidade. A nossa abordagem passa

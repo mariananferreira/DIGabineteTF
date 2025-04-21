@@ -1,5 +1,5 @@
 const featuredTestimonial = {
-  body: 'Estou tão grata pela ajuda que o meu filho recebeu no gabinete de terapia da fala. Ele tem feito progressos incríveis na comunicação, e isso tem refletido positivamente na sua autoestima e nas suas interacções sociais. A equipa é extremamente qualificada e atenciosa.',
+  body: 'Estou tão grata pela ajuda que o meu filho recebeu no centro de terapia da fala. Ele tem feito progressos incríveis na comunicação, e isso tem refletido positivamente na sua autoestima e nas suas interacções sociais. A equipa é extremamente qualificada e atenciosa.',
   author: {
     name: 'Maria Silva',
     date: 'setembro 10, 2024',
@@ -39,7 +39,7 @@ const testimonials = [
     ],
     [
       {
-        body: 'A evolução do meu filho no gabinete de terapia da fala foi notável. Ele passou de uma criança que mal conseguia comunicar para uma criança que adora conversar. Sou muito grata pelo trabalho que fizeram!',
+        body: 'A evolução do meu filho no Centro Terapêutico DI foi notável. Ele passou de uma criança que mal conseguia comunicar para uma criança que adora conversar. Sou muito grata pelo trabalho que fizeram!',
         author: {
           name: 'Miguel Sousa',
           date: 'junho 5, 2023',

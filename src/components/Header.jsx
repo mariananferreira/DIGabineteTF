@@ -36,8 +36,8 @@ function TopBar() {
         {/* Email com ícone de envelope */}
         <div className="flex items-center space-x-2">
           <EnvelopeIcon className="h-5 w-5 text-slate-700" />
-          <a href="mailto:geralgabinetetf.di@gmail.com" className="hover:underline">
-            geralgabinetetf.di@gmail.com
+          <a href="mailto:geral.centroterapeuticodi@gmail.com" className="hover:underline">
+            geral.centroterapeuticodi@gmail.com
           </a>
         </div>
       </div>
@@ -179,7 +179,7 @@ export function Header() {
         <Container>
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="Home">
-              <p>Gabinete Terapia da Fala DI</p>
+              <p>Centro Terapêutico DI</p>
             </Link>
             <div className="lg:hidden">
               <MobileNavigation />

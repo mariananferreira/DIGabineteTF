@@ -82,7 +82,7 @@ export default function TerDeb() {
                 <br />
                 <br />
                 Realizo intervenção com crianças e com estas diversas
-                perturbações desde que terminei a licenciatura. O Gabinete DI é
+                perturbações desde que terminei a licenciatura. O Centro Terapêutico DI é
                 para mim, ao nível pessoal e profissional, um grande desafio.
                 Poderão sempre contar com a minha sinceridade, dedicação e
                 profissionalismo. Espero que o nosso projeto auxilie muitas

@@ -10,7 +10,7 @@ export function Footer() {
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row sm:justify-between">
           {/* Nome da empresa à esquerda */}
           <p className="text-sm text-slate-500 order-1 sm:order-none sm:mr-auto">
-            Gabinete Terapia da Fala DI
+            Centro Terapêutico DI
           </p>
 
           {/* Livro de Reclamações no centro */}

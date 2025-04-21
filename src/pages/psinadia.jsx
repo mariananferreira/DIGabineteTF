@@ -90,7 +90,7 @@ export default function PsiNadia() {
                 Perturbações de Aprendizagem Específica, Espectro do Autismo,
                 Perturbação do Desenvolvimento Intelectual, Depressão,
                 Ansiedade, dificuldades de regulação emocional, comportamentos
-                de oposição e autoestima. No Gabinete DI, disponho-me a
+                de oposição e autoestima. No Centro Terapêutico DI, disponho-me a
                 acompanhar e auxiliar todas as famílias que nos procuram, com
                 dedicação, respeito, empatia, confidencialidade, não julgamento
                 e tendo presente, sempre, todos os princípios éticos regidos
