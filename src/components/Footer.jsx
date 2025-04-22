@@ -46,7 +46,7 @@ export function Footer() {
               </svg>
             </Link>
             <Link
-              href="https://www.instagram.com/gabinetetf.di/"
+              href="https://www.instagram.com/centroterapeuticodi/"
               target="blank"
               rel="noreferrer"
             >
