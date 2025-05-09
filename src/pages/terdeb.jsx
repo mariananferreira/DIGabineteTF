@@ -83,7 +83,7 @@ export default function TerDeb() {
                 <br />
                 Sou também especializada em Perturbações da Comunicação, Relação
                 e Autismo, uma das áreas que mais me desperta interesse e que
-                mais gosto de explorar. Através do Gabinete DI, espero conseguir
+                mais gosto de explorar. Através do Centro Terapêutico DI, espero conseguir
                 ajudar o máximo de famílias possível e que este projeto se torne
                 uma referência e seja reconhecido pelo profissionalismo,
                 responsabilidade e respeito por todos os que nos procuram, sendo
