@@ -1,13 +1,21 @@
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import space1 from '@/images/space1.jpeg'
-import space2 from '@/images/space2.jpeg'
-import space3 from '@/images/space3.jpeg'
-import space4 from '@/images/space4.jpeg'
-import space5 from '@/images/space5.jpeg'
-import space6 from '@/images/space6.jpeg'
-import space7 from '@/images/space7.jpeg'
-import space8 from '@/images/gab7.jpeg'
+import space1 from '@/images/gab1.jpeg'
+import space2 from '@/images/gab2.jpeg'
+import space3 from '@/images/gab3.jpeg'
+import space4 from '@/images/gab4.jpeg'
+import space5 from '@/images/gab5.jpeg'
+import space6 from '@/images/gab6.jpeg'
+import space7 from '@/images/gab21.jpeg'
+import space8 from '@/images/gab9.jpeg'
+import space9 from '@/images/gab10.jpeg'
+import space10 from '@/images/gab18.jpeg'
+import space11 from '@/images/entrada.jpeg'
+import space12 from '@/images/gab13.jpeg'
+import space13 from '@/images/gab19.jpeg'
+import space14 from '@/images/gab15.jpeg'
+import space15 from '@/images/gab20.jpeg'
+import space16 from '@/images/gab17.jpeg'
 
 const products = [
   {
@@ -48,6 +56,46 @@ const products = [
   {
     id: 8,
     imageSrc: space8,
+    imageAlt: 'space',
+  },
+  {
+    id: 9,
+    imageSrc: space9,
+    imageAlt: 'space',
+  },
+  {
+    id: 10,
+    imageSrc: space10,
+    imageAlt: 'space.',
+  },
+  {
+    id: 11,
+    imageSrc: space11,
+    imageAlt: 'space',
+  },
+  {
+    id: 12,
+    imageSrc: space12,
+    imageAlt: 'space',
+  },
+  {
+    id: 13,
+    imageSrc: space13,
+    imageAlt: 'space',
+  },
+  {
+    id: 14,
+    imageSrc: space14,
+    imageAlt: 'space',
+  },
+  {
+    id: 15,
+    imageSrc: space15,
+    imageAlt: 'space',
+  },
+  {
+    id: 16,
+    imageSrc: space16,
     imageAlt: 'space',
   },
 ]

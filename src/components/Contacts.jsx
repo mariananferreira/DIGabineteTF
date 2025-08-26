@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { Container } from '@/components/Container'
-import SM from '@/images/space1.jpeg'
+import SM from '@/images/balcao.jpeg'
 
 export function Contacts() {
   const [formData, setFormData] = useState({
