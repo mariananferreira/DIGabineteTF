@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import team from '@/images/team.jpeg'
 import somos from '@/images/di2.jpeg'
-import space from '@/images/space1.jpeg'
+import space from '@/images/balc.jpeg'
 import { Container } from '@/components/Container'
 
 export default function Intro() {
