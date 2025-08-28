@@ -28,72 +28,72 @@ import space22 from '@/images/porta.jpeg'
 const products = [
   {
     id: 1,
-    imageSrc: space8,
-    imageAlt: 'space',
-  },
-  {
-    id: 2,
-    imageSrc: space18,
-    imageAlt: 'space.',
-  },
-  {
-    id: 3,
-    imageSrc: space14,
-    imageAlt: 'space',
-  },
-  {
-    id: 4,
-    imageSrc: space19,
-    imageAlt: 'space',
-  },
-  {
-    id: 5,
-    imageSrc: space10,
-    imageAlt: 'space',
-  },
-  {
-    id: 6,
     imageSrc: space11,
     imageAlt: 'space',
   },
   {
-    id: 7,
+    id: 2,
+    imageSrc: space10,
+    imageAlt: 'space.',
+  },
+  {
+    id: 3,
     imageSrc: space15,
     imageAlt: 'space',
   },
   {
-    id: 8,
+    id: 4,
     imageSrc: space20,
     imageAlt: 'space',
   },
   {
-    id: 9,
+    id: 5,
     imageSrc: space21,
     imageAlt: 'space',
   },
   {
-    id: 10,
+    id: 6,
     imageSrc: space12,
-    imageAlt: 'space.',
+    imageAlt: 'space',
   },
   {
-    id: 11,
+    id: 7,
     imageSrc: space16,
     imageAlt: 'space',
   },
   {
-    id: 12,
+    id: 8,
     imageSrc: space22,
     imageAlt: 'space',
   },
   {
+    id: 9,
+    imageSrc: space5,
+    imageAlt: 'space',
+  },
+  {
+    id: 10,
+    imageSrc: space8,
+    imageAlt: 'space.',
+  },
+  {
+    id: 11,
+    imageSrc: space18,
+    imageAlt: 'space',
+  },
+  {
+    id: 12,
+    imageSrc: space14,
+    imageAlt: 'space',
+  },
+  {
     id: 13,
-    imageSrc: space2,
+    imageSrc: space19,
     imageAlt: 'space',
   },
   {
     id: 14,
-    imageSrc: space9,
+    imageSrc: space3,
     imageAlt: 'space',
   },
   {
@@ -108,22 +108,22 @@ const products = [
   },
   {
     id: 17,
-    imageSrc: space1,
+    imageSrc: space9,
     imageAlt: 'space',
   },
   {
     id: 18,
-    imageSrc: space7,
+    imageSrc: space2,
     imageAlt: 'space',
   },
   {
     id: 19,
-    imageSrc: space3,
+    imageSrc: space1,
     imageAlt: 'space',
   },
   {
     id: 20,
-    imageSrc: space5,
+    imageSrc: space7,
     imageAlt: 'space',
   },
 ]
