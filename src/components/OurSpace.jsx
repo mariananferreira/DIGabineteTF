@@ -22,93 +22,95 @@ import space19 from '@/images/gabI.jpeg'
 import space20 from '@/images/ent.jpeg'
 import space21 from '@/images/balc.jpeg'
 import space22 from '@/images/porta.jpeg'
+import SM from '@/images/balcao.jpeg'
+
 
 
 
 const products = [
   {
     id: 1,
-    imageSrc: space11,
-    imageAlt: 'space',
-  },
-  {
-    id: 2,
-    imageSrc: space10,
-    imageAlt: 'space.',
-  },
-  {
-    id: 3,
-    imageSrc: space15,
-    imageAlt: 'space',
-  },
-  {
-    id: 4,
-    imageSrc: space20,
-    imageAlt: 'space',
-  },
-  {
-    id: 5,
-    imageSrc: space21,
-    imageAlt: 'space',
-  },
-  {
-    id: 6,
-    imageSrc: space12,
-    imageAlt: 'space',
-  },
-  {
-    id: 7,
-    imageSrc: space16,
-    imageAlt: 'space',
-  },
-  {
-    id: 8,
     imageSrc: space22,
     imageAlt: 'space',
   },
   {
-    id: 9,
+    id: 2,
     imageSrc: space5,
-    imageAlt: 'space',
-  },
-  {
-    id: 10,
-    imageSrc: space8,
     imageAlt: 'space.',
   },
   {
-    id: 11,
+    id: 3,
+    imageSrc: space20,
+    imageAlt: 'space',
+  },
+  {
+    id: 4,
+    imageSrc: space16,
+    imageAlt: 'space',
+  },
+  {
+    id: 5,
+    imageSrc: SM,
+    imageAlt: 'space',
+  },
+  {
+    id: 6,
+    imageSrc: space21,
+    imageAlt: 'space',
+  },
+  {
+    id: 7,
+    imageSrc: space8,
+    imageAlt: 'space',
+  },
+  {
+    id: 8,
     imageSrc: space18,
     imageAlt: 'space',
   },
   {
+    id: 9,
+    imageSrc: space7,
+    imageAlt: 'space',
+  },
+  {
+    id: 10,
+    imageSrc: space13,
+    imageAlt: 'space.',
+  },
+  {
+    id: 11,
+    imageSrc: space2,
+    imageAlt: 'space',
+  },
+  {
     id: 12,
-    imageSrc: space14,
+    imageSrc: space9,
     imageAlt: 'space',
   },
   {
     id: 13,
-    imageSrc: space19,
-    imageAlt: 'space',
-  },
-  {
-    id: 14,
-    imageSrc: space3,
-    imageAlt: 'space',
-  },
-  {
-    id: 15,
-    imageSrc: space13,
-    imageAlt: 'space',
-  },
-  {
-    id: 16,
     imageSrc: space17,
     imageAlt: 'space',
   },
   {
+    id: 14,
+    imageSrc: space1,
+    imageAlt: 'space',
+  },
+  {
+    id: 15,
+    imageSrc: space4,
+    imageAlt: 'space',
+  },
+  {
+    id: 16,
+    imageSrc: space14,
+    imageAlt: 'space',
+  },
+  {
     id: 17,
-    imageSrc: space9,
+    imageSrc: space3,
     imageAlt: 'space',
   },
   {
