@@ -30,7 +30,8 @@ const people = [
     name: 'Dra. Bárbara Jacinto',
     role: 'Psicóloga Clínica',
     imageUrl: BT,
-    linkedinUrl: '#deb',
+    linkedinUrl:
+      'https://www.instagram.com/psicologa.barbarajacinto_?igsh=MTk5N2w1ejNieGVpYQ==',
     url: '/psibarbara',
   },
   // More people...
@@ -67,7 +68,11 @@ export default function OurTeam() {
                   {person.name}
                 </h3>
                 <p className="text-sm/6 text-gray-600">{person.role}</p>
-                <ul role="list" className="mt-4 flex justify-center gap-x-4">
+                <ul
+                  role="list"
+                  target="_blank"
+                  className="mt-4 flex justify-center gap-x-4"
+                >
                   <li>
                     <a
                       href={person.linkedinUrl}
