@@ -2,6 +2,7 @@ import Image from 'next/image'
 import debora from '@/images/deb1.png'
 import ines from '@/images/ines.jpeg'
 import nadia from '@/images/nadia.png'
+import BT from '@/images/BT.png'
 
 const people = [
   {
@@ -24,6 +25,13 @@ const people = [
     imageUrl: nadia,
     linkedinUrl: '#deb',
     url: '/psinadia',
+  },
+  {
+    name: 'Dra. Bárbara Jacinto',
+    role: 'Psicóloga Clínica',
+    imageUrl: BT,
+    linkedinUrl: '#deb',
+    url: '/psibarbara',
   },
   // More people...
 ]
