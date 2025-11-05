@@ -2,7 +2,12 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx}'],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',     // se usares app router
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',   // se usares pages router
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -20,20 +25,16 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
-      borderRadius: {
-        '4xl': '2rem',
-      },
+      borderRadius: { '4xl': '2rem' },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         display: ['Lexend', ...defaultTheme.fontFamily.sans],
       },
-      maxWidth: {
-        '2xl': '40rem',
-      },
+      maxWidth: { '2xl': '40rem' },
     },
   },
   plugins: [
-    require('@tailwindcss/forms'), 
-    require('@tailwindcss/aspect-ratio')
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }
