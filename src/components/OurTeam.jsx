@@ -3,6 +3,7 @@ import debora from '@/images/deb1.png'
 import ines from '@/images/ines.jpeg'
 import nadia from '@/images/nadia.png'
 import BT from '@/images/BT.png'
+import CE from '@/images/crisfoto.png'
 
 const people = [
   {
@@ -33,6 +34,14 @@ const people = [
     linkedinUrl:
       'https://www.instagram.com/psicologa.barbarajacinto_?igsh=MTk5N2w1ejNieGVpYQ==',
     url: '/psibarbara',
+  },
+  {
+    name: 'Dra. Cristiana Elias',
+    role: 'Terapeuta Ocupacional',
+    imageUrl: CE,
+    linkedinUrl:
+      'https://www.instagram.com/centroterapeuticodi/',
+    url: '/tercris',
   },
   // More people...
 ]
