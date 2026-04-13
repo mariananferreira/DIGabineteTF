@@ -4,6 +4,8 @@ import ines from '@/images/ines.jpeg'
 import nadia from '@/images/nadia.png'
 import BT from '@/images/BT.png'
 import CE from '@/images/crisfoto.png'
+import TJ from '@/images/terJoana.png'
+import TM from '@/images/TERM.png'
 
 const people = [
   {
@@ -42,6 +44,22 @@ const people = [
     linkedinUrl:
       'https://www.instagram.com/centroterapeuticodi/',
     url: '/tercris',
+  },
+  {
+    name: 'Dra. Mariana Moreira',
+    role: 'Terapeuta Ocupacional',
+    imageUrl: TM,
+    linkedinUrl:
+      'https://www.instagram.com/centroterapeuticodi/',
+    url: '/TerMariana',
+  },
+  {
+    name: 'Dra. Joana',
+    role: 'Terapeuta da Fala',
+    imageUrl: TJ,
+    linkedinUrl:
+      'https://www.instagram.com/centroterapeuticodi/',
+    url: '/TerJoana',
   },
   // More people...
 ]
