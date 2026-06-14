@@ -54,7 +54,7 @@ const people = [
     url: '/TerMariana',
   },
   {
-    name: 'Dra. Joana',
+    name: 'Dra. Joana Gomes',
     role: 'Terapeuta da Fala',
     imageUrl: TJ,
     linkedinUrl:

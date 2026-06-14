@@ -16,7 +16,7 @@ export default function TerJoana() {
             className="mb-12 mt-12 text-center"
           >
             <h1 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
-              Dra. Joana
+              Dra. Joana Gomes
             </h1>
             <p className="text mt-2 text-lg">Terapeuta da fala</p>
           </section>
