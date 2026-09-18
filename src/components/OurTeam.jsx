@@ -21,14 +21,14 @@ const people = [
     role: 'Terapeuta da Fala',
     imageUrl: ines,
     instagramUrl: 'https://www.instagram.com/tfinesleite/',
-    url: '/TerInes',
+    url: '/terines',
   },
   {
     name: 'Dra. Nádia Teixeira',
     role: 'Psicóloga Clínica',
     imageUrl: nadia,
     instagramUrl: null,
-    url: '/PsiNadia',
+    url: '/psinadia',
   },
   {
     name: 'Dra. Inês Oliveira',
