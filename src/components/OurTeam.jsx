@@ -2,7 +2,7 @@ import Image from 'next/image'
 import debora from '@/images/deb1.png'
 import ines from '@/images/ines.jpeg'
 import nadia from '@/images/nadia.png'
-import BT from '@/images/BT.png'
+import BT from '@/images/io.png'
 import CE from '@/images/crisfoto.png'
 import TJ from '@/images/terJoana.png'
 import TM from '@/images/TERM.png'
@@ -30,11 +30,11 @@ const people = [
     url: '/psinadia',
   },
   {
-    name: 'Dra. Bárbara Jacinto',
-    role: 'Psicóloga Clínica',
+    name: 'Dra. Inês Oliveira',
+    role: 'Terapeuta da Fala',
     imageUrl: BT,
     linkedinUrl:
-      'https://www.instagram.com/psicologa.barbarajacinto_?igsh=MTk5N2w1ejNieGVpYQ==',
+      'https://www.instagram.com/centroterapeuticodi/',
     url: '/psibarbara',
   },
   {

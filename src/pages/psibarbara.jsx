@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import ines from '@/images/BT.png'
+import ines from '@/images/io.png'
 import Link from 'next/link'
 
 export default function PsiBarbara() {
@@ -16,9 +16,9 @@ export default function PsiBarbara() {
             className="mb-12 mt-12 text-center"
           >
             <h1 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
-              Dra. Bárbara Jacinto
+              Dra. Inês Oliveira
             </h1>
-            <p className="text mt-2 text-lg">Psicóloga Clínica</p>
+            <p className="text mt-2 text-lg">Terapeuta da Fala</p>
           </section>
           <section className="flex flex-col items-center gap-8 sm:flex-row">
             <div className="flex-shrink-0">
@@ -52,44 +52,33 @@ export default function PsiBarbara() {
 
             <div className="mb-12">
               <p className="text text-justify leading-relaxed">
-                Olá, eu sou a Bárbara Jacinto, Psicóloga Clínica.
+                Olá! Eu sou a Inês e sou Terapeuta da Fala.
                 <br />
                 <br />
-                Sou formada pela Universidade Católica do Porto e sou Membro
-                Efetivo da Ordem dos Psicólogos Portugueses (Cédula Profissional
-                CP29277). A minha experiência clínica centra-se sobretudo no
-                acompanhamento de adolescentes e adultos. Iniciei a minha
-                prática no Hospital São João e, atualmente, trabalho em contexto
-                de consultório privado. <br />
-                <br />
-                Ao longo deste percurso, tenho acompanhado pessoas que enfrentam
-                desafios como ansiedade, depressão, processos de luto e
-                dificuldades nos relacionamentos (sejam amorosos ou familiares).
-                A minha atuação estende-se também a problemáticas de maior
-                complexidade, como perturbações alimentares, perturbação
-                obsessivo-compulsiva, desafios ao nível do comportamento e da
-                regulação emocional.
+                Sou licenciada em Terapia da Fala pela Escola Superior de Saúde
+                e, ao longo do meu percurso profissional, tenho tido a
+                oportunidade de acompanhar pessoas de diferentes faixas etárias
+                e com necessidades muito distintas. Apesar dessa diversidade, é
+                no trabalho com crianças que encontro uma motivação muito
+                especial. Gosto de acompanhar cada criança ao seu ritmo,
+                valorizar as suas conquistas e transformar cada sessão num
+                espaço onde aprender também pode ser divertido.
                 <br />
                 <br />
-                A base do meu trabalho é a construção de uma relação terapêutica
-                sólida, segura e de confiança. Considero que este é o pilar mais
-                importante para um processo de mudança eficaz. Através de uma
-                escuta ativa, empatia e uma postura de não julgamento, o meu
-                objetivo é que cada pessoa se sinta verdadeiramente ouvida,
-                compreendida e aceite.
+                Dentro da Terapia da Fala, tenho particular interesse pelas
+                áreas da Comunicação e pela Motricidade Orofacial, áreas que
+                procuro aprofundar continuamente através de formação e de
+                experiência clínica. Acredito que cada criança tem a sua própria
+                forma de comunicar e que o nosso papel, enquanto terapeutas,
+                passa também por descobrir e potenciar essa forma de expressão.
+                Estou muito feliz por abraçar este novo desafio e por poder
+                fazer parte da equipa do Centro Terapêutico DI. 
                 <br />
                 <br />
-                A minha intervenção é sustentada pela evidência científica. A
-                minha formação de base é em Terapia Cognitivo-Comportamental,
-                mas integro também outras abordagens, como a Terapia da
-                Aceitação e Compromisso, para me adaptar da melhor forma às
-                necessidades específicas de cada pessoa.
-                <br />
-                <br />
-                No Centro Terapêutico DI, comprometo-me a oferecer um
-                acompanhamento de qualidade, pautado pelo respeito, pela
-                confidencialidade e por todos os princípios éticos que regem a
-                nossa prática profissional.
+                Espero poder
+                acompanhar cada criança de forma próxima e atenta, respeitando o
+                seu ritmo e que seja possível celebrar cada pequena conquista ao
+                longo do caminho.
               </p>
             </div>
           </section>

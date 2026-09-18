@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import morangos from '@/images/mor.jpeg'
+
 import seb1 from '@/images/parceria.jpeg'
 import seb2 from '@/images/parceria1.jpeg'
 import seb3 from '@/images/parceria2.jpeg'
 import colegio from '@/images/transferir.png'
 import seb4 from '@/images/seb4.jpeg'
-import seb5 from '@/images/seb5.jpeg'
+
 
 const people = [
   {
@@ -18,16 +18,7 @@ const people = [
     role: 'Polo I – Fânzeres',
     imageUrl: seb2,
   },
-  {
-    name: 'Centro de Estudos – Morangos',
-    role: 'Baguim do Monte',
-    imageUrl: morangos,
-  },
-  {
-    name: 'Escola Santa Maria',
-    role: 'Porto',
-    imageUrl: seb5,
-  },
+
   {
     name: 'Centro Médico de Soutelo - Medicina dentária',
     role: 'Rio Tinto',
