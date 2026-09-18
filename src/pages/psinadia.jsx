@@ -240,8 +240,8 @@ export default function PsiNadia() {
                   ))}
                   
                 </div>
-                */}
-              </div>
+                
+              </div>*/}
 
               {/* Texto final */}
               <div
