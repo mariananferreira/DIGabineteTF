@@ -185,8 +185,8 @@ export default function TerCristiana() {
                     </span>
                   ))}
                 </div>
-              */}
-              </div>
+              
+              </div>*/}
 
               {/* Abordagem */}
               <div

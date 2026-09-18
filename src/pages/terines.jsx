@@ -278,8 +278,8 @@ export default function TerInes() {
                     </span>
                   ))}
                 </div>
-                */}
-              </div>
+                
+              </div>*/}
 
               {/* Especialização */}
               <div

@@ -154,7 +154,7 @@ export default function TerInesOliveira() {
               </div>
 
               {/* Áreas de acompanhamento */}
-              <div
+              {/*<div
                 className="
                   mt-9
                   rounded-3xl
@@ -199,7 +199,7 @@ export default function TerInesOliveira() {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div>*/}
 
               {/* Continuação */}
               <div

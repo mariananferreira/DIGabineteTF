@@ -185,8 +185,8 @@ export default function TerJoana() {
                     </span>
                   ))}
                 </div>
-                */}
-              </div>
+                
+              </div>*/}
 
               {/* Especialização */}
               <div

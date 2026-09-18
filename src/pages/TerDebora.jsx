@@ -276,8 +276,8 @@ export default function TerDeb() {
                     </span>
                   ))}
                 </div>
-                */}
-              </div>
+                
+              </div>*/}
 
               {/* Especialização */}
               <div

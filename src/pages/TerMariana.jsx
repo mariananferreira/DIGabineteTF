@@ -197,8 +197,8 @@ export default function TerMari() {
                     </span>
                   ))}
                 </div>
-                */}
-              </div>
+                
+                  </div> */}
 
               {/* Formação e abordagem */}
               <div
