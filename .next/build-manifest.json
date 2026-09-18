@@ -20,10 +20,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/TerJoana": [
+    "/TerInes": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/TerJoana.js"
+      "static/chunks/pages/TerInes.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
