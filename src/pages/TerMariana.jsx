@@ -151,7 +151,7 @@ export default function TerMari() {
               </div>
 
               {/* Áreas de acompanhamento */}
-              <div
+             {/*  <div
                 className="
                   mt-9
                   rounded-3xl
@@ -197,6 +197,7 @@ export default function TerMari() {
                     </span>
                   ))}
                 </div>
+                */}
               </div>
 
               {/* Formação e abordagem */}

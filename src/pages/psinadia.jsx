@@ -182,7 +182,7 @@ export default function PsiNadia() {
               </div>
 
               {/* Áreas de acompanhamento */}
-              <div
+              {/* <div
                 className="
                   mt-9
                   rounded-3xl
@@ -238,7 +238,9 @@ export default function PsiNadia() {
                       {area}
                     </span>
                   ))}
+                  
                 </div>
+                */}
               </div>
 
               {/* Texto final */}

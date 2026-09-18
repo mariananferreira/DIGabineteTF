@@ -230,7 +230,7 @@ export default function TerInes() {
               </div>
 
               {/* Áreas de acompanhamento */}
-              <div
+            {/*   <div
                 className="
                   mt-9
                   rounded-3xl
@@ -278,6 +278,7 @@ export default function TerInes() {
                     </span>
                   ))}
                 </div>
+                */}
               </div>
 
               {/* Especialização */}

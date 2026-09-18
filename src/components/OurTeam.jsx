@@ -151,17 +151,20 @@ export default function OurTeam() {
                     alt={`${person.name}, ${person.role}`}
                     fill
                     sizes="
-                      (max-width: 640px) 100vw,
-                      (max-width: 1024px) 50vw,
-                      320px
-                    "
-                    className="
-                      object-cover
-                      object-top
-                      transition-transform
-                      duration-500
-                      group-hover:scale-[1.03]
-                    "
+    (max-width: 640px) 100vw,
+    (max-width: 1024px) 50vw,
+    320px
+  "
+                    className={`
+    object-cover
+    transition-transform
+    duration-500
+    ${
+      person.name === 'Dra. Inês Oliveira'
+        ? 'scale-[0.88] object-[center_35%] group-hover:scale-[0.91]'
+        : 'object-top group-hover:scale-[1.03]'
+    }
+  `}
                   />
                 </div>
               </a>
@@ -201,7 +204,6 @@ export default function OurTeam() {
                     "
                   >
                     Ver perfil
-                    
                   </a>
 
                   {/* Instagram */}

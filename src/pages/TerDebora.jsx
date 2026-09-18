@@ -229,7 +229,7 @@ export default function TerDeb() {
               
 
                 {/* Áreas de acompanhamento */}
-              <div
+             {/*  <div
                 className="
                   mt-9
                   rounded-3xl
@@ -276,6 +276,7 @@ export default function TerDeb() {
                     </span>
                   ))}
                 </div>
+                */}
               </div>
 
               {/* Especialização */}
