@@ -140,40 +140,37 @@ function MobileNavigation() {
 }
 
 // Cabeçalho Principal
+
 export function Header() {
-  const [isMobile, setIsMobile] = useState(false)
-  const [isTopBarVisible, setIsTopBarVisible] = useState(true)  // Estado para controlar a visibilidade da TopBar
+  const [isTopBarVisible, setIsTopBarVisible] = useState(true)
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 640)
-    }
-
     const handleScroll = () => {
-      setIsTopBarVisible(window.scrollY === 0)  // Atualiza o estado conforme o scroll
+      setIsTopBarVisible(window.scrollY === 0)
     }
 
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+
+    window.addEventListener('scroll', handleScroll, {
+      passive: true,
+    })
 
     return () => {
-      window.removeEventListener('resize', handleResize)
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   return (
     <>
-      {/** Exibir a barra superior somente em telas maiores que mobile */}
-      {!isMobile && <TopBar />}
+      <TopBar />
+
       <header
         className={clsx(
-          "fixed z-40 w-full bg-[#e8cfc2] px-4 py-4 font-bold shadow-md sm:px-6 lg:px-8 transition-all duration-300",
-          {
-            "top-0": isMobile || !isTopBarVisible, // Em mobile ou se a barra superior sumir
-            "top-[40px]": !isMobile && isTopBarVisible, // Em telas grandes com a barra visível
-          }
+          'fixed top-0 z-40 w-full bg-[#e8cfc2] px-4 py-4 font-bold shadow-md sm:px-6 lg:px-8',
+          'transition-transform duration-300 ease-in-out',
+          isTopBarVisible
+            ? 'sm:translate-y-[40px]'
+            : 'translate-y-0'
         )}
       >
         <Container>
@@ -181,9 +178,11 @@ export function Header() {
             <Link href="/" aria-label="Home">
               <p>Centro Terapêutico DI</p>
             </Link>
+
             <div className="lg:hidden">
               <MobileNavigation />
             </div>
+
             <nav className="hidden space-x-6 lg:flex">
               <NavLink href="#aboutme">Quem somos</NavLink>
               <NavLink href="#ourteam">Corpo técnico</NavLink>
