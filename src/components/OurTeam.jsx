@@ -24,18 +24,18 @@ const people = [
     url: '/terines',
   },
   {
-    name: 'Dra. Nádia Teixeira',
-    role: 'Psicóloga Clínica',
-    imageUrl: nadia,
-    instagramUrl: null,
-    url: '/psinadia',
-  },
-  {
     name: 'Dra. Inês Oliveira',
     role: 'Terapeuta da Fala',
     imageUrl: BT,
     instagramUrl: null,
     url: '/TerInesOliveira',
+  },
+  {
+    name: 'Dra. Joana Gomes',
+    role: 'Terapeuta da Fala',
+    imageUrl: TJ,
+    instagramUrl: null,
+    url: '/TerJoana',
   },
   {
     name: 'Dra. Cristiana Elias',
@@ -51,13 +51,7 @@ const people = [
     instagramUrl: null,
     url: '/TerMariana',
   },
-  {
-    name: 'Dra. Joana Gomes',
-    role: 'Terapeuta da Fala',
-    imageUrl: TJ,
-    instagramUrl: null,
-    url: '/TerJoana',
-  },
+
 ]
 
 function InstagramIcon() {
