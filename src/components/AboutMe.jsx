@@ -13,8 +13,11 @@ export function AboutMe() {
       <Container>
         <hr className="mx-auto mb-10 w-3/4 border-t-2 border-[#e8cfc2] sm:mb-14" />
         <div className="mx-auto max-w-3xl text-center">
-          <h2 id="aboutme-title" className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
             Quem somos
+          </p>
+          <h2 id="aboutme-title" className="sectionTitles text-3xl tracking-tight sm:text-3xl">
+            Ao lado de cada <span className="titleWord">família</span>, em cada conquista
           </h2>
 
         </div>
