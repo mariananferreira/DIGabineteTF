@@ -87,6 +87,9 @@ export default function OurTeam() {
 
         {/* Título */}
         <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
+            O nosso corpo técnico
+          </p>
           <h2
             id="ourteam-title"
             className="sectionTitles text-3xl tracking-tight sm:text-3xl"

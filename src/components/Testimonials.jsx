@@ -1,131 +1,100 @@
-const featuredTestimonial = {
-  body: 'Estou tão grata pela ajuda que o meu filho recebeu no centro de terapia da fala. Ele tem feito progressos incríveis na comunicação, e isso tem refletido positivamente na sua autoestima e nas suas interacções sociais. A equipa é extremamente qualificada e atenciosa.',
-  author: {
-    name: 'Maria Silva',
-    date: 'setembro 10, 2024',
-  },
-}
+const googleMapsUrl =
+  'https://www.google.com/maps/place/Centro+Terap%C3%AAutico+DI/@41.1765243,-8.5559812,605m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd246389310fa803:0xff5e2419b55aba57!8m2!3d41.1765243!4d-8.5534063!16s%2Fg%2F11sslc02wr'
 
+// Review texts supplied by the site owner from Google Maps; manually maintained.
 const testimonials = [
-  [
-    [
-      {
-        body: 'O espaço é incrível e a equipa é extremamente simpática e atenciosa, estamos muito felizes com os resultados.',
-        author: {
-          name: 'José Rocha',
-          date: 'agosto 15, 2024',
-        },
-      },
-    ],
-    [
-      {
-        body: 'A evolução no meu filho foi visível. Agora ele compreende melhor e fala com clareza. Muito agradecida!',
-        author: {
-          name: 'Sofia Rodrigues',
-          date: 'dezembro 20, 2023',
-        },
-      },
-    ],
-  ],
-  [
-    [
-      {
-        body: 'Com a terapia, o meu filho tornou-se mais expressivo e confiante, especialmente em público.',
-        author: {
-          name: 'Isabel Santos',
-          date: 'setembro 17, 2024',
-        },
-      },
-    ],
-    [
-      {
-        body: 'A evolução do meu filho no Centro Terapêutico DI foi notável. Ele passou de uma criança que mal conseguia comunicar para uma criança que adora conversar. Sou muito grata pelo trabalho que fizeram!',
-        author: {
-          name: 'Miguel Sousa',
-          date: 'junho 5, 2023',
-        },
-      },
-    ],
-    
-  ],
+  {
+    author: 'Dora Sofia Bastos da Silva',
+    body: 'Estamos muito gratos pelo trabalho desenvolvido, pelo profissionalismo e cuidado demonstrado em cada sessão. Somos de SMFeira, mas cada km percorrido foi recebido a dobrar com algo que não é mensurável. GRATIDÃO pela ajuda recebida 🤍',
+  },
+  {
+    author: 'Soraia Gomes',
+    body: 'O profissionalismo, dedicação e abordagem acolhedora e empática demonstram um verdadeiro compromisso com o desenvolvimento e bem-estar de todos os meninos (e suas famílias) que frequentam o espaço! Parabéns Débora e Inês, por todo o cuidado exímio neste projeto especial!',
+  },
+  {
+    author: 'Joana Ramos',
+    body: 'Excelentes profissionais. Não importa apenas ter formação, é necessário ter vocação, e sem dúvida alguma que a Dra Inês nasceu para lidar com crianças. Um muito obrigada por todo o profissionalismo, cuidado e amor.',
+  },
+  {
+    author: 'Ana Silva',
+    body: 'Recomendo, terapeutas muito profissionais e dedicadas, espaço acolhedor!',
+  },
+  {
+    author: 'Salomé Cruz de Sá',
+    body: 'Equipa muito profissional e atenciosa, recomendo muito!!',
+  },
 ]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Testimonials() {
   return (
-    <section id="Testimonials" aria-label="Testimonials">
-      <div className="py-6">
-        <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-          <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-            <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
+    <section
+      id="Testimonials"
+      aria-labelledby="testimonials-title"
+      className="py-14 sm:py-16"
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <hr className="mx-auto mb-14 w-3/4 border-t-2 border-[#e8cfc2]" />
 
-            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
-              As <span className="titleWord">vozes</span> de quem já confia no
-              nosso trabalho
-            </h2>
-          </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-            <figure className="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-              <blockquote className="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
-                <p>{`“${featuredTestimonial.body}”`}</p>
-              </blockquote>
-              <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-                <div className="flex-auto">
-                  <div className="font-semibold">
-                    {featuredTestimonial.author.name}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    ★★★★★ <span className="text-green-500">✔️ Verificado</span>
-                  </div>
-                  <div className="text-xs text-gray-500">
-                    {featuredTestimonial.author.date}
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
-            {testimonials.map((columnGroup, columnGroupIdx) => (
-              <div
-                key={columnGroupIdx}
-                className="space-y-8 xl:contents xl:space-y-0"
-              >
-                {columnGroup.map((column, columnIdx) => (
-                  <div
-                    key={columnIdx}
-                    className={classNames(
-                      (columnGroupIdx === 0 && columnIdx === 0) ||
-                        (columnGroupIdx === testimonials.length - 1 &&
-                          columnIdx === columnGroup.length - 1)
-                        ? 'xl:row-span-2'
-                        : 'xl:row-start-1',
-                      'space-y-8'
-                    )}
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
+            Testemunhos
+          </p>
+          <h2
+            id="testimonials-title"
+            className="sectionTitles text-3xl tracking-tight sm:text-3xl"
+          >
+            As <span className="titleWord">vozes</span> de quem já confia no
+            nosso trabalho
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500">
+            Cada família tem uma história. Conheça as experiências de quem já
+            passou pelo nosso centro.
+          </p>
+        </div>
+
+        <ul
+          role="list"
+          className="mx-auto mt-12 flex max-w-5xl flex-wrap justify-center gap-6"
+        >
+          {testimonials.map((testimonial) => (
+            <li key={testimonial.author} className="flex w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)]">
+              <figure className="flex w-full flex-col rounded-[1.75rem] bg-white p-7 shadow-sm ring-1 ring-black/5 sm:p-8">
+                <p className="mb-4 text-xs font-medium uppercase tracking-[0.12em] text-[#936b59]">
+                  Avaliação no Google
+                </p>
+                <blockquote className="flex-1 whitespace-pre-wrap text-left text-base leading-7 text-gray-700">
+                  <p>{testimonial.body}</p>
+                </blockquote>
+                <figcaption className="mt-7 border-t border-[#f0e5de] pt-5 text-left">
+                  <p className="text-sm font-semibold text-gray-900">
+                    {testimonial.author}
+                  </p>
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm text-[#936b59] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#936b59]"
                   >
-                    {column.map((testimonial) => (
-                      <figure className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
-                        <blockquote className="text-gray-900">
-                          <p>{`“${testimonial.body}”`}</p>
-                        </blockquote>
-                        <figcaption className="mt-6 flex flex-col gap-y-2">
-                          <div className="font-semibold">
-                            {testimonial.author.name}
-                          </div>
-                          <div className="text-sm text-gray-600">
-                          ★★★★★ <span className="text-green-500">✔️ Verificado</span>
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            {testimonial.author.date}
-                          </div>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
+                    Consultar ficha no Google ↗
+                    <span className="sr-only"> (abre num novo separador)</span>
+                  </a>
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-8 text-center">
+          <a
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-[#b98b76] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#936b59] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#936b59]"
+          >
+            Consultar avaliações no Google ↗
+            <span className="sr-only"> (abre num novo separador)</span>
+          </a>
+
         </div>
       </div>
     </section>

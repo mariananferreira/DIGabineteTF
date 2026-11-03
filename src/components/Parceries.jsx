@@ -6,156 +6,100 @@ import seb3 from '@/images/parceria2.jpeg'
 import colegio from '@/images/transferir.png'
 import seb4 from '@/images/seb4.jpeg'
 
-
-const people = [
+const partners = [
   {
-    name: 'Centro de Estudos – 3 Ponto 14',
-    role: 'Rio Tinto',
-    imageUrl: seb1,
+    name: '3 Ponto 14',
+    category: 'Centro de estudos',
+    location: 'Rio Tinto',
+    image: seb1,
   },
   {
-    name: 'Crescer a Brincar (Jardim/Creche)',
-    role: 'Polo I – Fânzeres',
-    imageUrl: seb2,
+    name: 'Crescer a Brincar',
+    category: 'Jardim de infância e creche',
+    location: 'Polo I · Fânzeres',
+    image: seb2,
   },
-
   {
-    name: 'Centro Médico de Soutelo - Medicina dentária',
-    role: 'Rio Tinto',
-    imageUrl: seb3,
+    name: 'Centro Médico de Soutelo',
+    category: 'Medicina dentária',
+    location: 'Rio Tinto',
+    image: seb3,
   },
   {
     name: 'Externato Santa Margarida',
-    role: 'Gondomar',
-    imageUrl: colegio,
+    category: 'Ensino',
+    location: 'Gondomar',
+    image: colegio,
   },
   {
     name: 'Associação de Pais da Escola da Boavista',
-    role: 'Rio tinto',
-    imageUrl: seb4,
+    category: 'Associação de pais',
+    location: 'Rio Tinto',
+    image: seb4,
   },
-
-  // More people...
 ]
 
 export default function Parceries() {
   return (
-    <section id="parceries" aria-label="parceries">
-      <div className="py-6">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
-            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
-              O <span className="titleWord">progresso</span> é um caminho que
-              não se faz sozinho!
-            </h2>
-          </div>
-          <ul
-            role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-          >
-            {people.map((person) => (
-              <li key={person.name}>
-                <Image
-                  className="aspect-[14/13] w-full rounded-2xl border-4 border-[#e8cfc2]"
-                  src={person.imageUrl}
-                  alt=""
-                  priority
-                />
+    <section
+      id="parceries"
+      aria-labelledby="parceries-title"
+      className="py-14 sm:py-16"
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <hr className="mx-auto mb-14 w-3/4 border-t-2 border-[#e8cfc2]" />
 
-                <h3 className="text mt-6 text-center text-base/7 font-semibold tracking-tight">
-                  {person.name}
-                </h3>
-                <p className="text-center text-sm/6 text-gray-600">
-                  {person.role}
-                </p>
-              </li>
-            ))}
-          </ul>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
+            As nossas parcerias
+          </p>
+          <h2
+            id="parceries-title"
+            className="sectionTitles text-3xl tracking-tight sm:text-3xl"
+          >
+            O <span className="titleWord">progresso</span> é um caminho que não
+            se faz sozinho!
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500">
+            Trabalhamos em colaboração com entidades de educação e saúde para
+            apoiar as famílias.
+          </p>
         </div>
+
+        <ul
+          role="list"
+          className="mx-auto mt-12 flex max-w-5xl flex-wrap justify-center gap-6"
+        >
+          {partners.map((partner) => (
+            <li
+              key={partner.name}
+              className="flex w-full flex-col overflow-hidden rounded-[1.75rem] bg-white shadow-sm ring-1 ring-black/5 sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)]"
+            >
+              <div className="relative mx-6 mt-6 h-44 sm:mx-8">
+                <Image
+                  src={partner.image}
+                  alt={`Logótipo de ${partner.name}`}
+                  fill
+                  sizes="(max-width: 639px) calc(100vw - 96px), (max-width: 1023px) 40vw, 260px"
+                  className="object-contain"
+                />
+              </div>
+
+              <div className="mx-6 mt-6 flex flex-1 flex-col border-t border-[#f0e5de] pb-6 pt-5 text-center">
+                <h3 className="text-base font-semibold leading-6 tracking-tight text-gray-900 sm:min-h-[3rem]">
+                  {partner.name}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-500">
+                  {partner.category}
+                </p>
+                <p className="mt-auto pt-4 text-sm text-[#936b59]">
+                  {partner.location}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
 }
-
-// const people = [
-//   {
-//     name: 'Centro de Estudos – 3 Ponto 14',
-//     role: 'Rio Tinto',
-//     imageUrl: seb1,
-//     bio: 'Todos os nossos clientes podem usufruir de 10% de desconto em todos os seus serviços. Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
-//     url: 'https://3ponto14.com',
-//   },
-//   {
-//     name: 'Crescer a Brincar (Jardim / Creche)',
-//     role: 'Polo I – Fânzeres',
-//     imageUrl: seb2,
-//     bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro. -Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
-//     url:'http://www.crescerabrincar.pt '
-//   },
-//   {
-//     name: 'Centro de Estudos – Morangos',
-//     role: 'Baguim do Monte',
-//     imageUrl: morangos,
-//     bio: 'Todos os alunos têm 10% de desconto em consultas de Terapia da Fala unitárias.',
-//     url:'https://www.instagram.com/morangos_baguimdomonte/'
-//   },
-//   {
-//     name: 'Centro Médico de Soutelo - Medicina dentária',
-//     role: 'Rio Tinto',
-//     imageUrl: seb3,
-//     bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro.',
-//     url:'ttps://www.centromedicodesoutelo.com'
-//   },
-//   {
-//     name: 'Externato Santa Margarida',
-//     role: 'Gondomar',
-//     imageUrl: colegio,
-//     bio: 'O nosso Gabinete realiza intervenção direta nas instalações deste parceiro.',
-//     url:'https://externatosantamargarida.pt/'
-//   },
-//   // More people...
-// ]
-
-// export default function Parceries() {
-//   return (
-//     <section id="parceries" aria-label="parceries">
-//       <div className="py-24 sm:py-20">
-//       <div className="mt-12 mb-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-//           <h2 className="sectionTitles text-2xl tracking-tight sm:text-2xl">
-//             O <span className="titleWord">progresso</span> é um caminho que n\ao se faz sozinho!
-//           </h2>
-//           <ul
-//             role="list"
-//             className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
-//           >
-//             {people.map((person) => (
-//               <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
-//                 <Image
-//                   className="aspect-[4/5] w-52 flex-none rounded-2xl object-contain"
-//                   src={person.imageUrl}
-//                   alt=""
-//                   priority
-//                 />
-//                 <div className="flex-auto">
-//                   <a href={person.url} target="_blank" rel="noopener noreferrer">
-//                     <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
-//                       {person.name}
-//                     </h3>
-//                   </a>
-
-//                   <p className="text-base leading-7 text-gray-600">
-//                     {person.role}
-//                   </p>
-//                   <p className="mt-6 text-base leading-7 text-gray-600">
-//                     {person.bio}
-//                   </p>
-//                 </div>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
