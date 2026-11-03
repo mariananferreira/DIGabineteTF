@@ -73,15 +73,7 @@ export default function Testimonials() {
                   <p className="text-sm font-semibold text-gray-900">
                     {testimonial.author}
                   </p>
-                  <a
-                    href={googleMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-block text-sm text-[#936b59] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#936b59]"
-                  >
-                    Consultar ficha no Google ↗
-                    <span className="sr-only"> (abre num novo separador)</span>
-                  </a>
+
                 </figcaption>
               </figure>
             </li>
