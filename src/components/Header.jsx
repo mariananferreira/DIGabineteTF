@@ -1,10 +1,10 @@
 import { Fragment, useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
-import { NavLink } from '@/components/NavLink'
-import { ClockIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { ClockIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 // Componente para o TopBar
 function TopBar() {
@@ -33,11 +33,11 @@ function TopBar() {
         </div>
         {/* Espaçamento entre os itens */}
         <div className="w-4"></div>
-        {/* Email com ícone de envelope */}
+        {/* Contacto telefónico */}
         <div className="flex items-center space-x-2">
-          <EnvelopeIcon className="h-5 w-5 text-slate-700" />
-          <a href="mailto:geral.centroterapeuticodi@gmail.com" className="hover:underline">
-            geral.centroterapeuticodi@gmail.com
+          <PhoneIcon className="h-5 w-5 text-slate-700" />
+          <a href="tel:+351933281493" className="hover:underline">
+            +351 933 281 493
           </a>
         </div>
       </div>
@@ -48,12 +48,13 @@ function TopBar() {
 
 
 // Componente para Navegação Mobile
-function MobileNavLink({ href, children }) {
+function MobileNavLink({ href, children, onClick }) {
   const basePath = "/"; // Substitua pelo caminho base do seu projeto, se necessário
   return (
     <Link
       href={`${basePath}${href}`}
-      className="block w-full rounded-md p-2 text-center hover:bg-rose-200"
+      onClick={onClick}
+      className="flex min-h-[48px] w-full items-center justify-center rounded-xl px-3 py-3 text-center hover:bg-[#f8f3f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#936b59]"
     >
       {children}
     </Link>
@@ -91,11 +92,11 @@ function MobileNavIcon({ open }) {
 function MobileNavigation() {
   return (
     <Popover>
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <Popover.Button
-            className="relative z-10 flex h-8 w-8 items-center justify-center focus:outline-none"
-            aria-label="Toggle Navigation"
+            className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#936b59]"
+            aria-label={open ? 'Fechar menu' : 'Abrir menu'}
           >
             <MobileNavIcon open={open} />
           </Popover.Button>
@@ -122,14 +123,14 @@ function MobileNavigation() {
             >
               <Popover.Panel
                 as="div"
-                className="absolute inset-x-4 top-full mt-4 flex flex-col space-y-4 rounded-lg bg-white p-4 text-lg shadow-lg ring-1 ring-black/5"
+                className="absolute inset-x-4 top-full mt-2 flex max-h-[calc(100dvh-10rem)] flex-col gap-1 overflow-y-auto overscroll-contain rounded-2xl bg-white p-3 text-base shadow-lg ring-1 ring-black/5"
               >
-                <MobileNavLink href="#aboutme">Quem somos</MobileNavLink>
-                <MobileNavLink href="#ourteam">Corpo técnico</MobileNavLink>
-                <MobileNavLink href="#ourspace">O nosso espaço</MobileNavLink>
-                <MobileNavLink href="#parceries">Parcerias</MobileNavLink>
-                <MobileNavLink href="#contacts">Contactos</MobileNavLink>
-                <MobileNavLink href="#faqs">Perguntas frequentes</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#aboutme">Quem somos</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#ourteam">Corpo técnico</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#ourspace">O nosso espaço</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#parceries">Parcerias</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#contacts">Contactos</MobileNavLink>
+                <MobileNavLink onClick={() => close()} href="#faqs">Perguntas frequentes</MobileNavLink>
               </Popover.Panel>
             </Transition.Child>
           </Transition.Root>
@@ -141,7 +142,46 @@ function MobileNavigation() {
 
 // Cabeçalho Principal
 
+const navigation = [
+  ['aboutme', 'Quem somos'],
+  ['ourteam', 'Corpo técnico'],
+  ['ourspace', 'O nosso espaço'],
+  ['parceries', 'Parcerias'],
+  ['faqs', 'Perguntas frequentes'],
+]
+
 export function Header() {
+  const { pathname } = useRouter()
+  const [activeSection, setActiveSection] = useState(null)
+
+  useEffect(() => {
+    let frame
+    const update = () => {
+      const sections = ['aboutme', 'ourteam', 'ourspace', 'parceries', 'Testimonials', 'contacts', 'faqs']
+        .map((id) => document.getElementById(id)).filter(Boolean)
+      let active = null
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= 140) active = section.id
+      }
+      if (sections.length && window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        active = sections[sections.length - 1].id
+      }
+      setActiveSection(active)
+    }
+    const schedule = () => {
+      cancelAnimationFrame(frame)
+      frame = requestAnimationFrame(update)
+    }
+    update()
+    window.addEventListener('scroll', schedule, { passive: true })
+    window.addEventListener('resize', schedule)
+    return () => {
+      cancelAnimationFrame(frame)
+      window.removeEventListener('scroll', schedule)
+      window.removeEventListener('resize', schedule)
+    }
+  }, [pathname])
+
   const [isTopBarVisible, setIsTopBarVisible] = useState(true)
 
   useEffect(() => {
@@ -174,22 +214,30 @@ export function Header() {
         )}
       >
         <Container>
-          <div className="flex items-center justify-between">
-            <Link href="/" aria-label="Home">
+          <div className="flex items-center justify-between gap-2">
+            <Link href="/" aria-label="Página inicial" className="min-w-0 text-sm sm:text-base">
               <p>Centro Terapêutico DI</p>
             </Link>
 
-            <div className="lg:hidden">
+            <div className="xl:hidden">
               <MobileNavigation />
             </div>
 
-            <nav className="hidden space-x-6 lg:flex">
-              <NavLink href="#aboutme">Quem somos</NavLink>
-              <NavLink href="#ourteam">Corpo técnico</NavLink>
-              <NavLink href="#ourspace">O nosso espaço</NavLink>
-              <NavLink href="#parceries">Parcerias</NavLink>
-              <NavLink href="#contacts">Contactos</NavLink>
-              <NavLink href="#faqs">Perguntas frequentes</NavLink>
+            <nav aria-label="Navegação principal" className="hidden items-center gap-5 text-sm xl:flex">
+              {navigation.map(([id, label]) => (
+                <Link key={id} href={`/#${id}`}
+                  aria-current={activeSection === id ? 'location' : undefined}
+                  className={clsx(
+                    'inline-flex min-h-[48px] items-center whitespace-nowrap border-b-2 px-1 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#936b59]',
+                    activeSection === id ? 'border-[#936b59] text-[#5b5044]' : 'border-transparent text-slate-700 hover:border-[#b98b76] hover:text-[#5b5044]'
+                  )}>
+                  {label}
+                </Link>
+              ))}
+              <Link href="/#contacts" aria-current={activeSection === 'contacts' ? 'location' : undefined}
+                className="inline-flex min-h-[48px] items-center whitespace-nowrap rounded-full bg-[#936b59] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#795440] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#936b59]">
+                Marcar consulta
+              </Link>
             </nav>
           </div>
         </Container>

@@ -38,37 +38,40 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <section id="faqs" aria-label="frequent questions">
-      <div className="py-6">
-        <div className="sm:py-25 mx-auto max-w-7xl px-6 pb-10 lg:px-8">
-          <div className="mb-12 mt-12 first-letter:max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-            <hr className="mx-auto mb-24 w-3/4 border-t-2 border-[#e8cfc2]" />
+    <section id="faqs" aria-labelledby="faqs-title" className="py-14 sm:py-16">
+      <div>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto text-center">
+            <hr className="mx-auto mb-10 w-3/4 border-t-2 border-[#e8cfc2]" />
 
-            <h2 className="sectionTitles text-3xl tracking-tight sm:text-3xl">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-[#b98b76]">
+              Perguntas frequentes
+            </p>
+            <h2 id="faqs-title" className="sectionTitles mx-auto max-w-3xl text-3xl tracking-tight sm:text-3xl">
               Perguntas <span className="titleWord">comuns</span> respostas
               simples
             </h2>
-            <p className=" text mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500">
               Tem uma questão diferente das mencionadas? Envie a sua dúvida{' '}
               <a
                 href="#contacts"
-                className="primaryColor text-bold font-semibold hover:text-rose-100"
+                className="font-medium text-[#936b59] underline underline-offset-4 hover:text-[#5b5044] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#936b59]"
               >
                 através do formulário de contacto
               </a>{' '}
               e entraremos em contacto consigo com a maior brevidade.
             </p>
-            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+            <dl className="mx-auto mt-8 max-w-4xl space-y-4 text-left sm:mt-12">
               {faqs.map((faq) => (
-                <Disclosure as="div" key={faq.question} className="pt-6">
+                <Disclosure as="div" key={faq.question} className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
                   {({ open }) => (
                     <>
                       <dt>
-                        <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                        <Disclosure.Button className="flex min-h-[56px] w-full items-center justify-between gap-4 rounded-2xl px-5 py-5 text-left text-gray-900 transition-colors hover:bg-[#f8f3f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[#936b59] sm:px-6">
                           <span className="text-base font-semibold leading-7">
                             {faq.question}
                           </span>
-                          <span className="ml-6 flex h-7 items-center">
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f8f3f0] text-[#936b59]">
                             {open ? (
                               <MinusSmallIcon
                                 className="h-6 w-6"
@@ -83,8 +86,8 @@ export default function FAQs() {
                           </span>
                         </Disclosure.Button>
                       </dt>
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        <p className="text-justify text-base leading-7 text-gray-600">
+                      <Disclosure.Panel as="dd" className="px-5 pb-6 sm:px-6">
+                        <p className="border-t border-[#f0e5de] pt-4 text-left text-base leading-7 text-gray-600">
                           {faq.answer}
                         </p>
                       </Disclosure.Panel>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { MobileCarousel } from '@/components/MobileCarousel'
 
 import seb1 from '@/images/parceria.jpeg'
 import seb2 from '@/images/parceria1.jpeg'
@@ -66,9 +67,11 @@ export default function Parceries() {
           </p>
         </div>
 
-        <ul
-          role="list"
-          className="mx-auto mt-12 flex max-w-5xl flex-wrap justify-center gap-6"
+        <MobileCarousel
+          id="partner-cards"
+          label="conhecer as parcerias"
+          count={partners.length}
+          desktopClassName="sm:flex-wrap sm:justify-center"
         >
           {partners.map((partner) => (
             <li
@@ -98,7 +101,7 @@ export default function Parceries() {
               </div>
             </li>
           ))}
-        </ul>
+        </MobileCarousel>
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { MobileCarousel } from '@/components/MobileCarousel'
 
 import debora from '@/images/deb1.png'
 import ines from '@/images/ines.jpeg'
@@ -105,18 +106,11 @@ export default function OurTeam() {
         </div>
 
         {/* Cards */}
-        <ul
-          role="list"
-          className="
-            mx-auto
-            mt-12
-            grid
-            max-w-5xl
-            grid-cols-1
-            gap-6
-            sm:grid-cols-2
-            lg:grid-cols-3
-          "
+        <MobileCarousel
+          id="team-cards"
+          label="conhecer a equipa"
+          count={people.length}
+          desktopClassName="sm:grid sm:grid-cols-2 lg:grid-cols-3"
         >
           {people.map((person) => (
             <li
@@ -227,7 +221,7 @@ export default function OurTeam() {
               </div>
             </li>
           ))}
-        </ul>
+        </MobileCarousel>
       </div>
     </section>
   )

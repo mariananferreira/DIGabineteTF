@@ -58,7 +58,7 @@ export default function Example() {
       <div className="relative z-10 mx-auto max-w-7xl px-6 pt-32 text-white sm:pt-40 lg:px-8">
         <div className="ml-auto max-w-md text-center md:text-right lg:max-w-lg">
 
-          <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
             "Comunicar bem <br />
             desde cedo faz <br />
             toda a diferença"

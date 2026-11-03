@@ -1,3 +1,5 @@
+import { MobileCarousel } from '@/components/MobileCarousel'
+
 const googleMapsUrl =
   'https://www.google.com/maps/place/Centro+Terap%C3%AAutico+DI/@41.1765243,-8.5559812,605m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd246389310fa803:0xff5e2419b55aba57!8m2!3d41.1765243!4d-8.5534063!16s%2Fg%2F11sslc02wr'
 
@@ -52,9 +54,11 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <ul
-          role="list"
-          className="mx-auto mt-12 flex max-w-5xl flex-wrap justify-center gap-6"
+        <MobileCarousel
+          id="testimonial-cards"
+          label="ler os testemunhos"
+          count={testimonials.length}
+          desktopClassName="sm:flex-wrap sm:justify-center"
         >
           {testimonials.map((testimonial) => (
             <li key={testimonial.author} className="flex w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-3rem)/3)]">
@@ -82,7 +86,7 @@ export default function Testimonials() {
               </figure>
             </li>
           ))}
-        </ul>
+        </MobileCarousel>
 
         <div className="mt-8 text-center">
           <a
