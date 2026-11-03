@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 import debora from '@/images/deb1.png'
 import ines from '@/images/ines.jpeg'
-import nadia from '@/images/nadia.png'
 import BT from '@/images/io.png'
 import CE from '@/images/crisfoto.png'
 import TJ from '@/images/terJoana.png'
 import TM from '@/images/TERM.png'
+import ST from '@/images/sara.png'
 
 const people = [
   {
@@ -51,7 +51,14 @@ const people = [
     instagramUrl: null,
     url: '/TerMariana',
   },
-
+  {
+    name: 'Dra. Sara Teixeira',
+    role: 'Psicóloga',
+    imageUrl: ST,
+    portraitClassName: 'team-portrait-sara',
+    instagramUrl: null,
+    url: '/PsiSara',
+  },
 ]
 
 function InstagramIcon() {
@@ -113,6 +120,8 @@ export default function OurTeam() {
               key={person.name}
               className="
                 group
+                flex
+                flex-col
                 overflow-hidden
                 rounded-[1.75rem]
                 bg-white
@@ -149,22 +158,15 @@ export default function OurTeam() {
     (max-width: 1024px) 50vw,
     320px
   "
-                    className={`
-    object-cover
-    transition-transform
-    duration-500
-    ${
-      person.name === 'Dra. Inês Oliveira'
-        ? 'scale-[0.88] object-[center_35%] group-hover:scale-[0.91]'
-        : 'object-top group-hover:scale-[1.03]'
-    }
-  `}
+                    className={`object-cover object-top transition-transform duration-500 ${
+                      person.portraitClassName || 'group-hover:scale-[1.03]'
+                    }`}
                   />
                 </div>
               </a>
 
               {/* Informação */}
-              <div className="px-5 pb-5 pt-4 text-center">
+              <div className="flex flex-1 flex-col px-5 pb-5 pt-4 text-center">
                 {/* Nome */}
                 <a href={person.url}>
                   <h3
@@ -185,7 +187,7 @@ export default function OurTeam() {
                 <p className="mt-1 text-sm text-gray-500">{person.role}</p>
 
                 {/* Links */}
-                <div className="mt-4 flex items-center justify-center gap-4">
+                <div className="mt-auto flex min-h-[36px] items-end justify-center gap-4 pt-4">
                   {/* Perfil */}
                   <a
                     href={person.url}

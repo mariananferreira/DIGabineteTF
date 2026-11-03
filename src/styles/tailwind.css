@@ -217,3 +217,13 @@
 .img-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
+/* Remove the empty space above Sara without distorting the portrait.
+   Percentages keep the crop consistent at every card/profile width. */
+img.team-portrait-sara {
+  top: -20% !important;
+  height: 125% !important;
+  min-height: 125% !important;
+  bottom: auto !important;
+  object-position: center top;
+}
