@@ -59,7 +59,7 @@ export default function Photos() {
   const [mobileIndex, setMobileIndex] = useState(0)
   const galleryRef = useRef(null)
   const [showAll, setShowAll] = useState(false)
-  const visibleProducts = showAll ? products : products.slice(0, 8)
+  const visibleProducts = isMobile || showAll ? products : products.slice(0, 8)
 
   const toggleGallery = () => {
     if (showAll) {
@@ -203,7 +203,7 @@ export default function Photos() {
                 disabled={mobileIndex === visibleProducts.length - 1} aria-label="Fotografia seguinte" aria-controls="space-gallery"
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-xl text-[#936b59] ring-1 ring-[#e8cfc2] disabled:opacity-30">→</button>
             </div>
-            <div className="mt-6 text-center">
+            <div className="mt-6 hidden text-center sm:block">
               <button type="button" onClick={toggleGallery} aria-expanded={showAll} aria-controls="space-gallery"
                 className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#936b59] ring-1 ring-[#e8cfc2] transition-colors hover:bg-[#f8f3f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#936b59]">
                 {showAll ? 'Mostrar menos fotografias' : `Ver todas as fotografias (${products.length})`}
